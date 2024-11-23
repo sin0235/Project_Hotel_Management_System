@@ -260,5 +260,10 @@ namespace Muong_Thanh_Hotel
                 guna2Button9.Enabled = false;
             }
         }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
