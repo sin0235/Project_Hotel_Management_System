@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="dataProject">
+  <DataContextMoniker Name="/dataProjectDataContext" />
+  <nestedChildShapes>
+    <classShape Id="188e84db-174f-4d90-92a3-866c6a66aed2" absoluteBounds="1, 1, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/dataProjectDataContext/danhSachKhachHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b1cd23d5-f43d-45a2-ba39-5dbabbdeede2" absoluteBounds="1.0150000000000001, 1.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="e5df688f-5d8f-48af-8641-92ea7898d096" absoluteBounds="3.375, 0.875, 2, 2.5401025390625">
+      <DataClassMoniker Name="/dataProjectDataContext/danhSachNhanVien" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2ccf2bc6-79fb-420a-ac91-e884472c213a" absoluteBounds="3.39, 1.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="80aa88c2-6975-4e26-83bc-da26d4ba19b6" absoluteBounds="6.125, 1, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/dataProjectDataContext/danhSachPhong" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1416defc-6579-4dfd-8c65-3decfc807cf5" absoluteBounds="6.14, 1.46, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
