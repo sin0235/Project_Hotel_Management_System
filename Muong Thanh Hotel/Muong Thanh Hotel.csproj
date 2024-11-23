@@ -40,6 +40,7 @@
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Web" />
@@ -97,15 +98,15 @@
     </Compile>
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="ProjectDataDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ProjectDataDataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="ProjectDataDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ProjectDataDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="projectDatadbml.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>projectDatadbml.dbml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Receptionist.cs" />
@@ -242,6 +243,9 @@
     <EmbeddedResource Include="ManagerDashboard.resx">
       <DependentUpon>ManagerDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="projectDatadbml.dbml.layout">
+      <DependentUpon>projectDatadbml.dbml</DependentUpon>
+    </None>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -308,17 +312,6 @@
     <EmbeddedResource Include="User Control\uc_XoaPhong.resx">
       <DependentUpon>uc_XoaPhong.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="ProjectDataDataSet.xsc">
-      <DependentUpon>ProjectDataDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="ProjectDataDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ProjectDataDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="ProjectDataDataSet.xss">
-      <DependentUpon>ProjectDataDataSet.xsd</DependentUpon>
-    </None>
     <None Include="ProjectDataDataSet1.xsc">
       <DependentUpon>ProjectDataDataSet1.xsd</DependentUpon>
     </None>
@@ -329,6 +322,11 @@
     </None>
     <None Include="ProjectDataDataSet1.xss">
       <DependentUpon>ProjectDataDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="projectDatadbml.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>projectDatadbml.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </None>
     <None Include="ProjectDiagram.cd" />
     <None Include="packages.config" />
@@ -344,6 +342,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
