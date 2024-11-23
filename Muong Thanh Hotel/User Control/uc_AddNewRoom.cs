@@ -21,15 +21,6 @@ namespace Muong_Thanh_Hotel.User_Control
             InitializeComponent();
         }
 
-        private void lblSoPhong_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void btnThemPhong_Click(object sender, EventArgs e)
         {
@@ -65,5 +56,6 @@ namespace Muong_Thanh_Hotel.User_Control
             uc_TimKiemChinhSua1.BringToFront();
             uc_TimKiemChinhSua1.Visible = true;
         }
+
     }
 }

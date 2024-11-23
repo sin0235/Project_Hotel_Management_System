@@ -51,10 +51,10 @@
             this.btnXoaPhong = new Guna.UI2.WinForms.Guna2Button();
             this.btnThemPhong = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.danhSachPhongTableAdapter1 = new Muong_Thanh_Hotel.ProjectDataDataSet1TableAdapters.danhSachPhongTableAdapter();
             this.uc_TimKiemChinhSua1 = new Muong_Thanh_Hotel.User_Control.uc_TimKiemChinhSua();
             this.uc_XoaPhong1 = new Muong_Thanh_Hotel.User_Control.uc_XoaPhong();
             this.uc_ThemPhongMoi1 = new Muong_Thanh_Hotel.User_Control.uc_ThemPhongMoi();
-            this.danhSachPhongTableAdapter1 = new Muong_Thanh_Hotel.ProjectDataDataSet1TableAdapters.danhSachPhongTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.danhSachPhongBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projectDataDataSet1BindingSource)).BeginInit();
@@ -303,6 +303,10 @@
             this.guna2Panel1.Size = new System.Drawing.Size(553, 714);
             this.guna2Panel1.TabIndex = 19;
             // 
+            // danhSachPhongTableAdapter1
+            // 
+            this.danhSachPhongTableAdapter1.ClearBeforeFill = true;
+            // 
             // uc_TimKiemChinhSua1
             // 
             this.uc_TimKiemChinhSua1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(182)))), ((int)(((byte)(251)))));
@@ -329,10 +333,6 @@
             this.uc_ThemPhongMoi1.Size = new System.Drawing.Size(512, 681);
             this.uc_ThemPhongMoi1.TabIndex = 0;
             this.uc_ThemPhongMoi1.Visible = false;
-            // 
-            // danhSachPhongTableAdapter1
-            // 
-            this.danhSachPhongTableAdapter1.ClearBeforeFill = true;
             // 
             // uc_AddNewRoom
             // 
