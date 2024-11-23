@@ -105,10 +105,10 @@
             // lblQuanLiKhachHang
             // 
             this.lblQuanLiKhachHang.BackColor = System.Drawing.Color.Transparent;
-            this.lblQuanLiKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblQuanLiKhachHang.Font = new System.Drawing.Font("iCiel Cadena", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblQuanLiKhachHang.Location = new System.Drawing.Point(17, 12);
             this.lblQuanLiKhachHang.Name = "lblQuanLiKhachHang";
-            this.lblQuanLiKhachHang.Size = new System.Drawing.Size(286, 38);
+            this.lblQuanLiKhachHang.Size = new System.Drawing.Size(260, 43);
             this.lblQuanLiKhachHang.TabIndex = 2;
             this.lblQuanLiKhachHang.Text = "Quản lý khách hàng";
             // 
