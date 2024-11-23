@@ -30,6 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pnlThemPhong = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblNhapThongTin = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtLoaiGiuong = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtLoaiPhong = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -40,10 +44,6 @@
             this.lblTang = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblLoaiPhong = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblSoPhong = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.pnlThemPhong.SuspendLayout();
             this.SuspendLayout();
@@ -73,6 +73,52 @@
             this.pnlThemPhong.Name = "pnlThemPhong";
             this.pnlThemPhong.Size = new System.Drawing.Size(506, 674);
             this.pnlThemPhong.TabIndex = 21;
+            // 
+            // guna2DateTimePicker2
+            // 
+            this.guna2DateTimePicker2.Checked = true;
+            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker2.Location = new System.Drawing.Point(231, 434);
+            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
+            this.guna2DateTimePicker2.Size = new System.Drawing.Size(241, 36);
+            this.guna2DateTimePicker2.TabIndex = 37;
+            this.guna2DateTimePicker2.Value = new System.DateTime(2024, 11, 22, 2, 20, 23, 925);
+            // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.Checked = true;
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(231, 362);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(241, 36);
+            this.guna2DateTimePicker1.TabIndex = 36;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 11, 22, 2, 20, 23, 925);
+            // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(38, 440);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(156, 33);
+            this.guna2HtmlLabel2.TabIndex = 35;
+            this.guna2HtmlLabel2.Text = "Ngày trả phòng";
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(38, 368);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(180, 33);
+            this.guna2HtmlLabel1.TabIndex = 34;
+            this.guna2HtmlLabel1.Text = "Ngày nhận phòng";
             // 
             // lblNhapThongTin
             // 
@@ -189,11 +235,13 @@
             // 
             // btnAddNewRoom
             // 
+            this.btnAddNewRoom.Animated = true;
             this.btnAddNewRoom.AutoRoundedCorners = true;
             this.btnAddNewRoom.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddNewRoom.BorderRadius = 30;
+            this.btnAddNewRoom.BorderRadius = 20;
             this.btnAddNewRoom.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.btnAddNewRoom.BorderThickness = 1;
+            this.btnAddNewRoom.DefaultAutoSize = true;
             this.btnAddNewRoom.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAddNewRoom.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAddNewRoom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -201,11 +249,13 @@
             this.btnAddNewRoom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(182)))), ((int)(((byte)(251)))));
             this.btnAddNewRoom.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btnAddNewRoom.ForeColor = System.Drawing.Color.White;
+            this.btnAddNewRoom.IndicateFocus = true;
             this.btnAddNewRoom.Location = new System.Drawing.Point(257, 499);
             this.btnAddNewRoom.Name = "btnAddNewRoom";
-            this.btnAddNewRoom.Size = new System.Drawing.Size(204, 62);
+            this.btnAddNewRoom.Size = new System.Drawing.Size(172, 43);
             this.btnAddNewRoom.TabIndex = 24;
             this.btnAddNewRoom.Text = "Thêm phòng";
+            this.btnAddNewRoom.UseTransparentBackground = true;
             this.btnAddNewRoom.Click += new System.EventHandler(this.btnAddNewRoom_Click);
             // 
             // lblTang
@@ -237,52 +287,6 @@
             this.lblSoPhong.Size = new System.Drawing.Size(99, 33);
             this.lblSoPhong.TabIndex = 18;
             this.lblSoPhong.Text = "Số phòng:";
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(38, 368);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(180, 33);
-            this.guna2HtmlLabel1.TabIndex = 34;
-            this.guna2HtmlLabel1.Text = "Ngày nhận phòng";
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(38, 440);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(156, 33);
-            this.guna2HtmlLabel2.TabIndex = 35;
-            this.guna2HtmlLabel2.Text = "Ngày trả phòng";
-            // 
-            // guna2DateTimePicker1
-            // 
-            this.guna2DateTimePicker1.Checked = true;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(231, 362);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(241, 36);
-            this.guna2DateTimePicker1.TabIndex = 36;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2024, 11, 22, 2, 20, 23, 925);
-            // 
-            // guna2DateTimePicker2
-            // 
-            this.guna2DateTimePicker2.Checked = true;
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(231, 434);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(241, 36);
-            this.guna2DateTimePicker2.TabIndex = 37;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2024, 11, 22, 2, 20, 23, 925);
             // 
             // guna2Elipse1
             // 

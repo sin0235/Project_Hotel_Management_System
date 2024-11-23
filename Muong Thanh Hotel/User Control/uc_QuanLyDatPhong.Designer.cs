@@ -140,7 +140,7 @@
             this.btn.Name = "btn";
             this.btn.Size = new System.Drawing.Size(312, 45);
             this.btn.TabIndex = 1;
-            this.btn.Text = "Danh sách đặt phòng chờ xử lý";
+            this.btn.Text = "Danh sách khách hàng đang thuê";
             // 
             // btnRevation
             // 

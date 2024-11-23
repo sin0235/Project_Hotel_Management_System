@@ -97,6 +97,16 @@
     </Compile>
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="ProjectDataDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectDataDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectDataDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectDataDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Receptionist.cs" />
     <Compile Include="Room.cs" />
@@ -298,6 +308,28 @@
     <EmbeddedResource Include="User Control\uc_XoaPhong.resx">
       <DependentUpon>uc_XoaPhong.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="ProjectDataDataSet.xsc">
+      <DependentUpon>ProjectDataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectDataDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjectDataDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjectDataDataSet.xss">
+      <DependentUpon>ProjectDataDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectDataDataSet1.xsc">
+      <DependentUpon>ProjectDataDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ProjectDataDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProjectDataDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProjectDataDataSet1.xss">
+      <DependentUpon>ProjectDataDataSet1.xsd</DependentUpon>
+    </None>
     <None Include="ProjectDiagram.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
