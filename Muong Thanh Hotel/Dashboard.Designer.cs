@@ -252,6 +252,7 @@
             this.uC_Room1.Name = "uC_Room1";
             this.uC_Room1.Size = new System.Drawing.Size(1552, 1018);
             this.uC_Room1.TabIndex = 17;
+            this.uC_Room1.Load += new System.EventHandler(this.uC_Room1_Load);
             // 
             // Dashboard
             // 

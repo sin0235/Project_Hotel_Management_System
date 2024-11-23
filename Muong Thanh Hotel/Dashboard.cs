@@ -132,5 +132,10 @@ namespace Muong_Thanh_Hotel
         {
 
         }
+
+        private void uC_Room1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
