@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.labAddNewRoom = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dataTable = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
@@ -44,21 +44,23 @@
             this.uc_TimKiemChinhSua1 = new Muong_Thanh_Hotel.User_Control.uc_TimKiemChinhSua();
             this.uc_XoaPhong1 = new Muong_Thanh_Hotel.User_Control.uc_XoaPhong();
             this.uc_ThemPhongMoi1 = new Muong_Thanh_Hotel.User_Control.uc_ThemPhongMoi();
-            this.projectDataDataSet = new Muong_Thanh_Hotel.ProjectDataDataSet();
-            this.danhSachPhongBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.danhSachPhongTableAdapter = new Muong_Thanh_Hotel.ProjectDataDataSetTableAdapters.danhSachPhongTableAdapter();
-            this.soPhongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loaiPhongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.soTangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.giaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.trangThaiPhongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loaiGiuongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.projectDataDataSet1 = new Muong_Thanh_Hotel.ProjectDataDataSet1();
+            this.projectDataDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.isAvailableDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaiGiuongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.trangThaiPhongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.giaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soTangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaiPhongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soPhongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.danhSachPhongBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.danhSachPhongTableAdapter1 = new Muong_Thanh_Hotel.ProjectDataDataSet1TableAdapters.danhSachPhongTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.projectDataDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.danhSachPhongBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projectDataDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projectDataDataSet1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.danhSachPhongBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // labAddNewRoom
@@ -74,20 +76,19 @@
             // dataTable
             // 
             this.dataTable.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
-            this.dataTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(197)))), ((int)(((byte)(203)))), ((int)(((byte)(232)))));
+            this.dataTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataTable.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.dataTable.AutoGenerateColumns = false;
-            this.dataTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(140)))), ((int)(((byte)(209)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(140)))), ((int)(((byte)(209)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataTable.ColumnHeadersHeight = 25;
             this.dataTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dataTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -98,27 +99,27 @@
             this.trangThaiPhongDataGridViewTextBoxColumn,
             this.loaiGiuongDataGridViewTextBoxColumn,
             this.isAvailableDataGridViewTextBoxColumn});
-            this.dataTable.DataSource = this.danhSachPhongBindingSource;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(139)))), ((int)(((byte)(205)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataTable.DefaultCellStyle = dataGridViewCellStyle11;
+            this.dataTable.DataSource = this.danhSachPhongBindingSource1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(139)))), ((int)(((byte)(205)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataTable.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(201)))), ((int)(((byte)(231)))));
             this.dataTable.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.dataTable.Location = new System.Drawing.Point(21, 73);
             this.dataTable.Name = "dataTable";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataTable.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataTable.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataTable.RowHeadersVisible = false;
             this.dataTable.RowHeadersWidth = 51;
             this.dataTable.RowTemplate.Height = 24;
@@ -261,19 +262,60 @@
             this.uc_ThemPhongMoi1.TabIndex = 0;
             this.uc_ThemPhongMoi1.Visible = false;
             // 
-            // projectDataDataSet
-            // 
-            this.projectDataDataSet.DataSetName = "ProjectDataDataSet";
-            this.projectDataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // danhSachPhongBindingSource
-            // 
-            this.danhSachPhongBindingSource.DataMember = "danhSachPhong";
-            this.danhSachPhongBindingSource.DataSource = this.projectDataDataSet;
-            // 
             // danhSachPhongTableAdapter
             // 
-            this.danhSachPhongTableAdapter.ClearBeforeFill = true;
+            // 
+            // projectDataDataSet1
+            // 
+            this.projectDataDataSet1.DataSetName = "ProjectDataDataSet1";
+            this.projectDataDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // projectDataDataSet1BindingSource
+            // 
+            this.projectDataDataSet1BindingSource.DataSource = this.projectDataDataSet1;
+            this.projectDataDataSet1BindingSource.Position = 0;
+            // 
+            // isAvailableDataGridViewTextBoxColumn
+            // 
+            this.isAvailableDataGridViewTextBoxColumn.DataPropertyName = "isAvailable";
+            this.isAvailableDataGridViewTextBoxColumn.HeaderText = "Trạng thái thuê";
+            this.isAvailableDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.isAvailableDataGridViewTextBoxColumn.Name = "isAvailableDataGridViewTextBoxColumn";
+            // 
+            // loaiGiuongDataGridViewTextBoxColumn
+            // 
+            this.loaiGiuongDataGridViewTextBoxColumn.DataPropertyName = "loaiGiuong";
+            this.loaiGiuongDataGridViewTextBoxColumn.HeaderText = "Loại giường";
+            this.loaiGiuongDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.loaiGiuongDataGridViewTextBoxColumn.Name = "loaiGiuongDataGridViewTextBoxColumn";
+            // 
+            // trangThaiPhongDataGridViewTextBoxColumn
+            // 
+            this.trangThaiPhongDataGridViewTextBoxColumn.DataPropertyName = "trangThaiPhong";
+            this.trangThaiPhongDataGridViewTextBoxColumn.HeaderText = "Trạng thái phòng";
+            this.trangThaiPhongDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.trangThaiPhongDataGridViewTextBoxColumn.Name = "trangThaiPhongDataGridViewTextBoxColumn";
+            // 
+            // giaDataGridViewTextBoxColumn
+            // 
+            this.giaDataGridViewTextBoxColumn.DataPropertyName = "gia";
+            this.giaDataGridViewTextBoxColumn.HeaderText = "Giá phòng";
+            this.giaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.giaDataGridViewTextBoxColumn.Name = "giaDataGridViewTextBoxColumn";
+            // 
+            // soTangDataGridViewTextBoxColumn
+            // 
+            this.soTangDataGridViewTextBoxColumn.DataPropertyName = "soTang";
+            this.soTangDataGridViewTextBoxColumn.HeaderText = "Tầng";
+            this.soTangDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.soTangDataGridViewTextBoxColumn.Name = "soTangDataGridViewTextBoxColumn";
+            // 
+            // loaiPhongDataGridViewTextBoxColumn
+            // 
+            this.loaiPhongDataGridViewTextBoxColumn.DataPropertyName = "loaiPhong";
+            this.loaiPhongDataGridViewTextBoxColumn.HeaderText = "Loại phòng";
+            this.loaiPhongDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.loaiPhongDataGridViewTextBoxColumn.Name = "loaiPhongDataGridViewTextBoxColumn";
             // 
             // soPhongDataGridViewTextBoxColumn
             // 
@@ -285,47 +327,14 @@
             this.soPhongDataGridViewTextBoxColumn.ReadOnly = true;
             this.soPhongDataGridViewTextBoxColumn.Width = 114;
             // 
-            // loaiPhongDataGridViewTextBoxColumn
+            // danhSachPhongBindingSource1
             // 
-            this.loaiPhongDataGridViewTextBoxColumn.DataPropertyName = "loaiPhong";
-            this.loaiPhongDataGridViewTextBoxColumn.HeaderText = "Loại phòng";
-            this.loaiPhongDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.loaiPhongDataGridViewTextBoxColumn.Name = "loaiPhongDataGridViewTextBoxColumn";
+            this.danhSachPhongBindingSource1.DataMember = "danhSachPhong";
+            this.danhSachPhongBindingSource1.DataSource = this.projectDataDataSet1BindingSource;
             // 
-            // soTangDataGridViewTextBoxColumn
+            // danhSachPhongTableAdapter1
             // 
-            this.soTangDataGridViewTextBoxColumn.DataPropertyName = "soTang";
-            this.soTangDataGridViewTextBoxColumn.HeaderText = "Tầng";
-            this.soTangDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.soTangDataGridViewTextBoxColumn.Name = "soTangDataGridViewTextBoxColumn";
-            // 
-            // giaDataGridViewTextBoxColumn
-            // 
-            this.giaDataGridViewTextBoxColumn.DataPropertyName = "gia";
-            this.giaDataGridViewTextBoxColumn.HeaderText = "Giá phòng";
-            this.giaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.giaDataGridViewTextBoxColumn.Name = "giaDataGridViewTextBoxColumn";
-            // 
-            // trangThaiPhongDataGridViewTextBoxColumn
-            // 
-            this.trangThaiPhongDataGridViewTextBoxColumn.DataPropertyName = "trangThaiPhong";
-            this.trangThaiPhongDataGridViewTextBoxColumn.HeaderText = "Trạng thái phòng";
-            this.trangThaiPhongDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.trangThaiPhongDataGridViewTextBoxColumn.Name = "trangThaiPhongDataGridViewTextBoxColumn";
-            // 
-            // loaiGiuongDataGridViewTextBoxColumn
-            // 
-            this.loaiGiuongDataGridViewTextBoxColumn.DataPropertyName = "loaiGiuong";
-            this.loaiGiuongDataGridViewTextBoxColumn.HeaderText = "Loại giường";
-            this.loaiGiuongDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.loaiGiuongDataGridViewTextBoxColumn.Name = "loaiGiuongDataGridViewTextBoxColumn";
-            // 
-            // isAvailableDataGridViewTextBoxColumn
-            // 
-            this.isAvailableDataGridViewTextBoxColumn.DataPropertyName = "isAvailable";
-            this.isAvailableDataGridViewTextBoxColumn.HeaderText = "Trạng thái thuê";
-            this.isAvailableDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.isAvailableDataGridViewTextBoxColumn.Name = "isAvailableDataGridViewTextBoxColumn";
+            this.danhSachPhongTableAdapter1.ClearBeforeFill = true;
             // 
             // uc_AddNewRoom
             // 
@@ -343,8 +352,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataTable)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.projectDataDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.danhSachPhongBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projectDataDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projectDataDataSet1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.danhSachPhongBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -363,9 +373,6 @@
         private uc_ThemPhongMoi uc_ThemPhongMoi1;
         private uc_XoaPhong uc_XoaPhong1;
         private uc_TimKiemChinhSua uc_TimKiemChinhSua1;
-        private System.Windows.Forms.BindingSource danhSachPhongBindingSource;
-        private ProjectDataDataSet projectDataDataSet;
-        private ProjectDataDataSetTableAdapters.danhSachPhongTableAdapter danhSachPhongTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn soPhongDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn loaiPhongDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn soTangDataGridViewTextBoxColumn;
@@ -373,5 +380,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn trangThaiPhongDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn loaiGiuongDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn isAvailableDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource danhSachPhongBindingSource1;
+        private System.Windows.Forms.BindingSource projectDataDataSet1BindingSource;
+        private ProjectDataDataSet1 projectDataDataSet1;
+        private ProjectDataDataSet1TableAdapters.danhSachPhongTableAdapter danhSachPhongTableAdapter1;
     }
 }

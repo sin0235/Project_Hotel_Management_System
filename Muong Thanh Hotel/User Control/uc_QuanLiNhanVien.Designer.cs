@@ -44,7 +44,6 @@
             this.uc_XoaNhanVien1 = new Muong_Thanh_Hotel.User_Control.uc_XoaNhanVien();
             this.uc_ThemNhanVien1 = new Muong_Thanh_Hotel.User_Control.uc_ThemNhanVien();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.projectDataDataSet = new Muong_Thanh_Hotel.ProjectDataDataSet();
             this.projectDataDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.projectDataDataSet1 = new Muong_Thanh_Hotel.ProjectDataDataSet1();
             this.danhSachNhanVienBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -60,8 +59,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataTableOfEmployee)).BeginInit();
             this.pnlFunc.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.projectDataDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projectDataDataSetBindingSource)).BeginInit();
+        
             ((System.ComponentModel.ISupportInitialize)(this.projectDataDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.danhSachNhanVienBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -267,15 +265,7 @@
             // 
             this.guna2Elipse1.BorderRadius = 30;
             this.guna2Elipse1.TargetControl = this;
-            // 
-            // projectDataDataSet
-            // 
-            this.projectDataDataSet.DataSetName = "ProjectDataDataSet";
-            this.projectDataDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // projectDataDataSetBindingSource
-            // 
-            this.projectDataDataSetBindingSource.DataSource = this.projectDataDataSet;
+       
             this.projectDataDataSetBindingSource.Position = 0;
             // 
             // projectDataDataSet1
@@ -363,7 +353,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataTableOfEmployee)).EndInit();
             this.pnlFunc.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.projectDataDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.projectDataDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.projectDataDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.danhSachNhanVienBindingSource)).EndInit();
@@ -387,7 +376,6 @@
         private uc_SearchEdit uc_SearchEdit1;
         private System.Windows.Forms.BindingSource danhSachNhanVienBindingSource;
         private ProjectDataDataSet1 projectDataDataSet1;
-        private ProjectDataDataSet projectDataDataSet;
         private System.Windows.Forms.BindingSource projectDataDataSetBindingSource;
         private ProjectDataDataSet1TableAdapters.danhSachNhanVienTableAdapter danhSachNhanVienTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn cCCDDataGridViewTextBoxColumn;
