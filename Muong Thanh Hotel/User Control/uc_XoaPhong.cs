@@ -21,5 +21,11 @@ namespace Muong_Thanh_Hotel.User_Control
         {
 
         }
+
+        private void btnFine_Click(object sender, EventArgs e)
+        {
+            lblConfirm.Visible = true;
+            btnXoa.Visible = true;
+        }
     }
 }

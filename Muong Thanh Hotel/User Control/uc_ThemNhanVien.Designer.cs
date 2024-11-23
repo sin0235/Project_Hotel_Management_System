@@ -283,6 +283,7 @@
             this.btnThemNhanVien.BorderRadius = 30;
             this.btnThemNhanVien.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.btnThemNhanVien.BorderThickness = 1;
+            this.btnThemNhanVien.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThemNhanVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnThemNhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnThemNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));

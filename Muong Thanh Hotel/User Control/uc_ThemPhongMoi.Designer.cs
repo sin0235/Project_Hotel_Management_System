@@ -267,6 +267,7 @@
             this.btnAddNewRoom.BorderRadius = 30;
             this.btnAddNewRoom.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.btnAddNewRoom.BorderThickness = 1;
+            this.btnAddNewRoom.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddNewRoom.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnAddNewRoom.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnAddNewRoom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));

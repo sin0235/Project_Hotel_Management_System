@@ -77,6 +77,7 @@
             this.btnXemBaoCao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(182)))), ((int)(((byte)(251)))));
             this.btnXemBaoCao.BorderRadius = 22;
             this.btnXemBaoCao.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.btnXemBaoCao.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXemBaoCao.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnXemBaoCao.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnXemBaoCao.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -96,6 +97,7 @@
             this.btnQuanLiPhong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(182)))), ((int)(((byte)(251)))));
             this.btnQuanLiPhong.BorderRadius = 22;
             this.btnQuanLiPhong.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.btnQuanLiPhong.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnQuanLiPhong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnQuanLiPhong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnQuanLiPhong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -115,6 +117,7 @@
             this.btnQuanLiKhachHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(182)))), ((int)(((byte)(251)))));
             this.btnQuanLiKhachHang.BorderRadius = 22;
             this.btnQuanLiKhachHang.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.btnQuanLiKhachHang.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnQuanLiKhachHang.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnQuanLiKhachHang.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnQuanLiKhachHang.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -134,6 +137,7 @@
             this.btnQuanLiNhanVien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(182)))), ((int)(((byte)(251)))));
             this.btnQuanLiNhanVien.BorderRadius = 22;
             this.btnQuanLiNhanVien.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.btnQuanLiNhanVien.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnQuanLiNhanVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnQuanLiNhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnQuanLiNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));

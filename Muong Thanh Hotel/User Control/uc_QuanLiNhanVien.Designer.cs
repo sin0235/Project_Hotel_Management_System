@@ -34,6 +34,16 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataTableOfEmployee = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.cCCDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hoTenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gioiTinhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaySInhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sdtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.quocTichDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hireDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.danhSachNhanVienBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.projectDataDataSet1 = new Muong_Thanh_Hotel.ProjectDataDataSet1();
             this.lblQuanLINhanVien = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlFunc = new Guna.UI2.WinForms.Guna2Panel();
             this.btnFindAndEdit = new Guna.UI2.WinForms.Guna2Button();
@@ -45,23 +55,13 @@
             this.uc_ThemNhanVien1 = new Muong_Thanh_Hotel.User_Control.uc_ThemNhanVien();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.projectDataDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.projectDataDataSet1 = new Muong_Thanh_Hotel.ProjectDataDataSet1();
-            this.danhSachNhanVienBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.danhSachNhanVienTableAdapter = new Muong_Thanh_Hotel.ProjectDataDataSet1TableAdapters.danhSachNhanVienTableAdapter();
-            this.cCCDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hoTenDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gioiTinhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngaySInhDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sdtDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.quocTichDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hireDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataTableOfEmployee)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.danhSachNhanVienBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projectDataDataSet1)).BeginInit();
             this.pnlFunc.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
-        
-            ((System.ComponentModel.ISupportInitialize)(this.projectDataDataSet1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.danhSachNhanVienBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projectDataDataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // dataTableOfEmployee
@@ -74,7 +74,6 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.dataTableOfEmployee.AutoGenerateColumns = false;
             this.dataTableOfEmployee.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.dataTableOfEmployee.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -142,6 +141,72 @@
             this.dataTableOfEmployee.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(139)))), ((int)(((byte)(205)))));
             this.dataTableOfEmployee.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
+            // cCCDDataGridViewTextBoxColumn
+            // 
+            this.cCCDDataGridViewTextBoxColumn.DataPropertyName = "CCCD";
+            this.cCCDDataGridViewTextBoxColumn.HeaderText = "CCCD";
+            this.cCCDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.cCCDDataGridViewTextBoxColumn.Name = "cCCDDataGridViewTextBoxColumn";
+            // 
+            // hoTenDataGridViewTextBoxColumn
+            // 
+            this.hoTenDataGridViewTextBoxColumn.DataPropertyName = "hoTen";
+            this.hoTenDataGridViewTextBoxColumn.HeaderText = "Họ và tên";
+            this.hoTenDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.hoTenDataGridViewTextBoxColumn.Name = "hoTenDataGridViewTextBoxColumn";
+            // 
+            // gioiTinhDataGridViewTextBoxColumn
+            // 
+            this.gioiTinhDataGridViewTextBoxColumn.DataPropertyName = "gioiTinh";
+            this.gioiTinhDataGridViewTextBoxColumn.HeaderText = "Giới tính";
+            this.gioiTinhDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.gioiTinhDataGridViewTextBoxColumn.Name = "gioiTinhDataGridViewTextBoxColumn";
+            // 
+            // ngaySInhDataGridViewTextBoxColumn
+            // 
+            this.ngaySInhDataGridViewTextBoxColumn.DataPropertyName = "ngaySInh";
+            this.ngaySInhDataGridViewTextBoxColumn.HeaderText = "Ngày sinh";
+            this.ngaySInhDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.ngaySInhDataGridViewTextBoxColumn.Name = "ngaySInhDataGridViewTextBoxColumn";
+            // 
+            // sdtDataGridViewTextBoxColumn
+            // 
+            this.sdtDataGridViewTextBoxColumn.DataPropertyName = "sdt";
+            this.sdtDataGridViewTextBoxColumn.HeaderText = "SĐT";
+            this.sdtDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.sdtDataGridViewTextBoxColumn.Name = "sdtDataGridViewTextBoxColumn";
+            // 
+            // diaChiDataGridViewTextBoxColumn
+            // 
+            this.diaChiDataGridViewTextBoxColumn.DataPropertyName = "diaChi";
+            this.diaChiDataGridViewTextBoxColumn.HeaderText = "Địa chỉ";
+            this.diaChiDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.diaChiDataGridViewTextBoxColumn.Name = "diaChiDataGridViewTextBoxColumn";
+            // 
+            // quocTichDataGridViewTextBoxColumn
+            // 
+            this.quocTichDataGridViewTextBoxColumn.DataPropertyName = "quocTich";
+            this.quocTichDataGridViewTextBoxColumn.HeaderText = "Quốc tịch";
+            this.quocTichDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.quocTichDataGridViewTextBoxColumn.Name = "quocTichDataGridViewTextBoxColumn";
+            // 
+            // hireDateDataGridViewTextBoxColumn
+            // 
+            this.hireDateDataGridViewTextBoxColumn.DataPropertyName = "hireDate";
+            this.hireDateDataGridViewTextBoxColumn.HeaderText = "HireDate";
+            this.hireDateDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.hireDateDataGridViewTextBoxColumn.Name = "hireDateDataGridViewTextBoxColumn";
+            // 
+            // danhSachNhanVienBindingSource
+            // 
+            this.danhSachNhanVienBindingSource.DataMember = "danhSachNhanVien";
+            this.danhSachNhanVienBindingSource.DataSource = this.projectDataDataSet1;
+            // 
+            // projectDataDataSet1
+            // 
+            this.projectDataDataSet1.DataSetName = "ProjectDataDataSet1";
+            this.projectDataDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // lblQuanLINhanVien
             // 
             this.lblQuanLINhanVien.BackColor = System.Drawing.Color.Transparent;
@@ -170,6 +235,7 @@
             // btnFindAndEdit
             // 
             this.btnFindAndEdit.BorderRadius = 15;
+            this.btnFindAndEdit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFindAndEdit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnFindAndEdit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnFindAndEdit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -187,6 +253,7 @@
             // btnXoaNhanVien
             // 
             this.btnXoaNhanVien.BorderRadius = 15;
+            this.btnXoaNhanVien.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoaNhanVien.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnXoaNhanVien.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnXoaNhanVien.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -204,6 +271,7 @@
             // btnThemNV
             // 
             this.btnThemNV.BorderRadius = 15;
+            this.btnThemNV.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThemNV.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnThemNV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnThemNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -265,78 +333,10 @@
             // 
             this.guna2Elipse1.BorderRadius = 30;
             this.guna2Elipse1.TargetControl = this;
-       
-            this.projectDataDataSetBindingSource.Position = 0;
-            // 
-            // projectDataDataSet1
-            // 
-            this.projectDataDataSet1.DataSetName = "ProjectDataDataSet1";
-            this.projectDataDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // danhSachNhanVienBindingSource
-            // 
-            this.danhSachNhanVienBindingSource.DataMember = "danhSachNhanVien";
-            this.danhSachNhanVienBindingSource.DataSource = this.projectDataDataSet1;
             // 
             // danhSachNhanVienTableAdapter
             // 
             this.danhSachNhanVienTableAdapter.ClearBeforeFill = true;
-            // 
-            // cCCDDataGridViewTextBoxColumn
-            // 
-            this.cCCDDataGridViewTextBoxColumn.DataPropertyName = "CCCD";
-            this.cCCDDataGridViewTextBoxColumn.HeaderText = "CCCD";
-            this.cCCDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.cCCDDataGridViewTextBoxColumn.Name = "cCCDDataGridViewTextBoxColumn";
-            // 
-            // hoTenDataGridViewTextBoxColumn
-            // 
-            this.hoTenDataGridViewTextBoxColumn.DataPropertyName = "hoTen";
-            this.hoTenDataGridViewTextBoxColumn.HeaderText = "Họ và tên";
-            this.hoTenDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.hoTenDataGridViewTextBoxColumn.Name = "hoTenDataGridViewTextBoxColumn";
-            // 
-            // gioiTinhDataGridViewTextBoxColumn
-            // 
-            this.gioiTinhDataGridViewTextBoxColumn.DataPropertyName = "gioiTinh";
-            this.gioiTinhDataGridViewTextBoxColumn.HeaderText = "Giới tính";
-            this.gioiTinhDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.gioiTinhDataGridViewTextBoxColumn.Name = "gioiTinhDataGridViewTextBoxColumn";
-            // 
-            // ngaySInhDataGridViewTextBoxColumn
-            // 
-            this.ngaySInhDataGridViewTextBoxColumn.DataPropertyName = "ngaySInh";
-            this.ngaySInhDataGridViewTextBoxColumn.HeaderText = "Ngày sinh";
-            this.ngaySInhDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ngaySInhDataGridViewTextBoxColumn.Name = "ngaySInhDataGridViewTextBoxColumn";
-            // 
-            // sdtDataGridViewTextBoxColumn
-            // 
-            this.sdtDataGridViewTextBoxColumn.DataPropertyName = "sdt";
-            this.sdtDataGridViewTextBoxColumn.HeaderText = "SĐT";
-            this.sdtDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.sdtDataGridViewTextBoxColumn.Name = "sdtDataGridViewTextBoxColumn";
-            // 
-            // diaChiDataGridViewTextBoxColumn
-            // 
-            this.diaChiDataGridViewTextBoxColumn.DataPropertyName = "diaChi";
-            this.diaChiDataGridViewTextBoxColumn.HeaderText = "Địa chỉ";
-            this.diaChiDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.diaChiDataGridViewTextBoxColumn.Name = "diaChiDataGridViewTextBoxColumn";
-            // 
-            // quocTichDataGridViewTextBoxColumn
-            // 
-            this.quocTichDataGridViewTextBoxColumn.DataPropertyName = "quocTich";
-            this.quocTichDataGridViewTextBoxColumn.HeaderText = "Quốc tịch";
-            this.quocTichDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.quocTichDataGridViewTextBoxColumn.Name = "quocTichDataGridViewTextBoxColumn";
-            // 
-            // hireDateDataGridViewTextBoxColumn
-            // 
-            this.hireDateDataGridViewTextBoxColumn.DataPropertyName = "hireDate";
-            this.hireDateDataGridViewTextBoxColumn.HeaderText = "HireDate";
-            this.hireDateDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.hireDateDataGridViewTextBoxColumn.Name = "hireDateDataGridViewTextBoxColumn";
             // 
             // uc_QuanLiNhanVien
             // 
@@ -351,11 +351,11 @@
             this.Size = new System.Drawing.Size(1552, 1018);
             this.Load += new System.EventHandler(this.uc_QuanLiNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataTableOfEmployee)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.danhSachNhanVienBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.projectDataDataSet1)).EndInit();
             this.pnlFunc.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.projectDataDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.projectDataDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.danhSachNhanVienBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
