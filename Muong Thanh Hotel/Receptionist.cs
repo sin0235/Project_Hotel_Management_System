@@ -12,6 +12,13 @@ namespace Muong_Thanh_Hotel
         private string _password;
 
         private float _luong;
+        private DateTime _hireDate;
+
+        public DateTime hireDate
+        {
+            get { return _hireDate; }
+            set { _hireDate = value; }
+        }
 
         public float luong
         {

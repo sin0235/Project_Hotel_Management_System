@@ -38,14 +38,15 @@
             this.lblQuanLINhanVien = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dataTableOfProfit = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.dataTableOfSalary = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnBaoCaoLoiNhuan = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GradientPanel1.SuspendLayout();
-            this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataTableOfProfit)).BeginInit();
+            this.guna2GradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataTableOfSalary)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,6 +71,7 @@
             this.guna2GradientPanel1.BorderRadius = 20;
             this.guna2GradientPanel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             this.guna2GradientPanel1.BorderThickness = 1;
+            this.guna2GradientPanel1.Controls.Add(this.btnBaoCaoLoiNhuan);
             this.guna2GradientPanel1.Controls.Add(this.dataTableOfProfit);
             this.guna2GradientPanel1.Controls.Add(this.guna2HtmlLabel1);
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(140)))), ((int)(((byte)(209)))));
@@ -78,43 +80,6 @@
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(750, 939);
             this.guna2GradientPanel1.TabIndex = 23;
-            // 
-            // guna2GradientPanel2
-            // 
-            this.guna2GradientPanel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(8)))), ((int)(((byte)(103)))));
-            this.guna2GradientPanel2.BorderRadius = 20;
-            this.guna2GradientPanel2.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.guna2GradientPanel2.BorderThickness = 1;
-            this.guna2GradientPanel2.Controls.Add(this.dataTableOfSalary);
-            this.guna2GradientPanel2.Controls.Add(this.guna2HtmlLabel2);
-            this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(140)))), ((int)(((byte)(209)))));
-            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(194)))), ((int)(((byte)(235)))));
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(789, 68);
-            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(750, 939);
-            this.guna2GradientPanel2.TabIndex = 24;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("iCiel Cadena", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(17, 3);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(117, 37);
-            this.guna2HtmlLabel1.TabIndex = 23;
-            this.guna2HtmlLabel1.Text = "Doanh thu";
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("iCiel Cadena", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.White;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(17, 3);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(183, 37);
-            this.guna2HtmlLabel2.TabIndex = 24;
-            this.guna2HtmlLabel2.Text = "Lương nhân viên";
             // 
             // dataTableOfProfit
             // 
@@ -129,7 +94,8 @@
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataTableOfProfit.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dataTableOfProfit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataTableOfProfit.ColumnHeadersHeight = 4;
+            this.dataTableOfProfit.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -157,7 +123,7 @@
             this.dataTableOfProfit.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataTableOfProfit.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataTableOfProfit.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dataTableOfProfit.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataTableOfProfit.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dataTableOfProfit.ThemeStyle.HeaderStyle.Height = 4;
             this.dataTableOfProfit.ThemeStyle.ReadOnly = false;
             this.dataTableOfProfit.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -167,6 +133,32 @@
             this.dataTableOfProfit.ThemeStyle.RowsStyle.Height = 24;
             this.dataTableOfProfit.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataTableOfProfit.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("iCiel Cadena", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(17, 3);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(117, 37);
+            this.guna2HtmlLabel1.TabIndex = 23;
+            this.guna2HtmlLabel1.Text = "Doanh thu";
+            // 
+            // guna2GradientPanel2
+            // 
+            this.guna2GradientPanel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(8)))), ((int)(((byte)(103)))));
+            this.guna2GradientPanel2.BorderRadius = 20;
+            this.guna2GradientPanel2.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
+            this.guna2GradientPanel2.BorderThickness = 1;
+            this.guna2GradientPanel2.Controls.Add(this.dataTableOfSalary);
+            this.guna2GradientPanel2.Controls.Add(this.guna2HtmlLabel2);
+            this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(140)))), ((int)(((byte)(209)))));
+            this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(194)))), ((int)(((byte)(235)))));
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(789, 68);
+            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
+            this.guna2GradientPanel2.Size = new System.Drawing.Size(750, 939);
+            this.guna2GradientPanel2.TabIndex = 24;
             // 
             // dataTableOfSalary
             // 
@@ -221,6 +213,40 @@
             this.dataTableOfSalary.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataTableOfSalary.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
+            // guna2HtmlLabel2
+            // 
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("iCiel Cadena", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.White;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(17, 3);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(183, 37);
+            this.guna2HtmlLabel2.TabIndex = 24;
+            this.guna2HtmlLabel2.Text = "Lương nhân viên";
+            // 
+            // btnBaoCaoLoiNhuan
+            // 
+            this.btnBaoCaoLoiNhuan.Animated = true;
+            this.btnBaoCaoLoiNhuan.AutoRoundedCorners = true;
+            this.btnBaoCaoLoiNhuan.BackColor = System.Drawing.Color.Transparent;
+            this.btnBaoCaoLoiNhuan.BorderRadius = 18;
+            this.btnBaoCaoLoiNhuan.BorderThickness = 1;
+            this.btnBaoCaoLoiNhuan.DefaultAutoSize = true;
+            this.btnBaoCaoLoiNhuan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBaoCaoLoiNhuan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBaoCaoLoiNhuan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBaoCaoLoiNhuan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBaoCaoLoiNhuan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(194)))), ((int)(((byte)(235)))));
+            this.btnBaoCaoLoiNhuan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaoCaoLoiNhuan.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.btnBaoCaoLoiNhuan.IndicateFocus = true;
+            this.btnBaoCaoLoiNhuan.Location = new System.Drawing.Point(152, 3);
+            this.btnBaoCaoLoiNhuan.Name = "btnBaoCaoLoiNhuan";
+            this.btnBaoCaoLoiNhuan.Size = new System.Drawing.Size(205, 39);
+            this.btnBaoCaoLoiNhuan.TabIndex = 25;
+            this.btnBaoCaoLoiNhuan.Text = "Báo cáo lợi nhuận";
+            this.btnBaoCaoLoiNhuan.UseTransparentBackground = true;
+            // 
             // uc_BaoCao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -233,9 +259,9 @@
             this.Size = new System.Drawing.Size(1552, 1018);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTableOfProfit)).EndInit();
             this.guna2GradientPanel2.ResumeLayout(false);
             this.guna2GradientPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTableOfProfit)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTableOfSalary)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -252,5 +278,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2DataGridView dataTableOfProfit;
         private Guna.UI2.WinForms.Guna2DataGridView dataTableOfSalary;
+        private Guna.UI2.WinForms.Guna2Button btnBaoCaoLoiNhuan;
     }
 }
