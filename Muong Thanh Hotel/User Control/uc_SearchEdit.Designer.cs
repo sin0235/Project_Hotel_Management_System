@@ -31,13 +31,6 @@
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnCapNhat = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
-            this.txtCCCD = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblCCCD = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblTimKiem = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.hireDay = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.lblNgayLam = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.birthDay = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -50,6 +43,13 @@
             this.lblTinhTrang = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblLoaiPhong = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblSoPhong = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnCapNhat = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
+            this.txtCCCD = new Guna.UI2.WinForms.Guna2TextBox();
+            this.lblCCCD = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTimKiem = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
@@ -83,110 +83,6 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(483, 527);
             this.guna2Panel2.TabIndex = 51;
-            // 
-            // btnCapNhat
-            // 
-            this.btnCapNhat.BorderRadius = 20;
-            this.btnCapNhat.BorderThickness = 1;
-            this.btnCapNhat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnCapNhat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnCapNhat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnCapNhat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnCapNhat.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(127)))), ((int)(((byte)(246)))));
-            this.btnCapNhat.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btnCapNhat.ForeColor = System.Drawing.Color.White;
-            this.btnCapNhat.Location = new System.Drawing.Point(250, 456);
-            this.btnCapNhat.Name = "btnCapNhat";
-            this.btnCapNhat.Size = new System.Drawing.Size(214, 46);
-            this.btnCapNhat.TabIndex = 64;
-            this.btnCapNhat.Text = "Cập nhật thông tin";
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(118, 5);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(198, 32);
-            this.guna2HtmlLabel1.TabIndex = 63;
-            this.guna2HtmlLabel1.Text = "Cập nhật thông tin";
-            this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.guna2Panel1.BorderRadius = 15;
-            this.guna2Panel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            this.guna2Panel1.BorderThickness = 1;
-            this.guna2Panel1.Controls.Add(this.btnSearch);
-            this.guna2Panel1.Controls.Add(this.txtCCCD);
-            this.guna2Panel1.Controls.Add(this.lblCCCD);
-            this.guna2Panel1.Controls.Add(this.lblTimKiem);
-            this.guna2Panel1.Location = new System.Drawing.Point(4, 19);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(485, 111);
-            this.guna2Panel1.TabIndex = 50;
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.BorderRadius = 20;
-            this.btnSearch.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearch.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSearch.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(127)))), ((int)(((byte)(246)))));
-            this.btnSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.White;
-            this.btnSearch.Location = new System.Drawing.Point(360, 50);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(117, 37);
-            this.btnSearch.TabIndex = 40;
-            this.btnSearch.Text = "Search";
-            // 
-            // txtCCCD
-            // 
-            this.txtCCCD.AutoRoundedCorners = true;
-            this.txtCCCD.BorderColor = System.Drawing.Color.Black;
-            this.txtCCCD.BorderRadius = 14;
-            this.txtCCCD.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtCCCD.DefaultText = "";
-            this.txtCCCD.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtCCCD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtCCCD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCCCD.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtCCCD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCCCD.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtCCCD.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtCCCD.Location = new System.Drawing.Point(94, 54);
-            this.txtCCCD.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtCCCD.Name = "txtCCCD";
-            this.txtCCCD.PasswordChar = '\0';
-            this.txtCCCD.PlaceholderText = "Nhập vào CCCD của nhân viên";
-            this.txtCCCD.SelectedText = "";
-            this.txtCCCD.Size = new System.Drawing.Size(251, 30);
-            this.txtCCCD.TabIndex = 39;
-            this.txtCCCD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // lblCCCD
-            // 
-            this.lblCCCD.BackColor = System.Drawing.Color.Transparent;
-            this.lblCCCD.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCCCD.Location = new System.Drawing.Point(9, 55);
-            this.lblCCCD.Name = "lblCCCD";
-            this.lblCCCD.Size = new System.Drawing.Size(52, 25);
-            this.lblCCCD.TabIndex = 38;
-            this.lblCCCD.Text = "CCCD:";
-            // 
-            // lblTimKiem
-            // 
-            this.lblTimKiem.BackColor = System.Drawing.Color.Transparent;
-            this.lblTimKiem.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTimKiem.Location = new System.Drawing.Point(191, 5);
-            this.lblTimKiem.Name = "lblTimKiem";
-            this.lblTimKiem.Size = new System.Drawing.Size(98, 32);
-            this.lblTimKiem.TabIndex = 37;
-            this.lblTimKiem.Text = "Tìm kiếm";
-            this.lblTimKiem.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // hireDay
             // 
@@ -342,7 +238,7 @@
             this.txtTen.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTen.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txtTen.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTen.Location = new System.Drawing.Point(206, 55);
+            this.txtTen.Location = new System.Drawing.Point(212, 55);
             this.txtTen.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtTen.Name = "txtTen";
             this.txtTen.PasswordChar = '\0';
@@ -391,6 +287,112 @@
             this.lblSoPhong.Size = new System.Drawing.Size(84, 27);
             this.lblSoPhong.TabIndex = 65;
             this.lblSoPhong.Text = "Họ và tên:";
+            // 
+            // btnCapNhat
+            // 
+            this.btnCapNhat.BorderRadius = 20;
+            this.btnCapNhat.BorderThickness = 1;
+            this.btnCapNhat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCapNhat.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnCapNhat.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnCapNhat.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnCapNhat.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnCapNhat.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(127)))), ((int)(((byte)(246)))));
+            this.btnCapNhat.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btnCapNhat.ForeColor = System.Drawing.Color.White;
+            this.btnCapNhat.Location = new System.Drawing.Point(250, 456);
+            this.btnCapNhat.Name = "btnCapNhat";
+            this.btnCapNhat.Size = new System.Drawing.Size(214, 46);
+            this.btnCapNhat.TabIndex = 64;
+            this.btnCapNhat.Text = "Cập nhật thông tin";
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(118, 5);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(198, 32);
+            this.guna2HtmlLabel1.TabIndex = 63;
+            this.guna2HtmlLabel1.Text = "Cập nhật thông tin";
+            this.guna2HtmlLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.guna2Panel1.BorderRadius = 15;
+            this.guna2Panel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.guna2Panel1.BorderThickness = 1;
+            this.guna2Panel1.Controls.Add(this.btnSearch);
+            this.guna2Panel1.Controls.Add(this.txtCCCD);
+            this.guna2Panel1.Controls.Add(this.lblCCCD);
+            this.guna2Panel1.Controls.Add(this.lblTimKiem);
+            this.guna2Panel1.Location = new System.Drawing.Point(4, 19);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(485, 111);
+            this.guna2Panel1.TabIndex = 50;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BorderRadius = 20;
+            this.btnSearch.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSearch.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearch.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSearch.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(127)))), ((int)(((byte)(246)))));
+            this.btnSearch.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.White;
+            this.btnSearch.Location = new System.Drawing.Point(360, 50);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(117, 37);
+            this.btnSearch.TabIndex = 40;
+            this.btnSearch.Text = "Search";
+            // 
+            // txtCCCD
+            // 
+            this.txtCCCD.AutoRoundedCorners = true;
+            this.txtCCCD.BorderColor = System.Drawing.Color.Black;
+            this.txtCCCD.BorderRadius = 14;
+            this.txtCCCD.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCCCD.DefaultText = "";
+            this.txtCCCD.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCCCD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCCCD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCCCD.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCCCD.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCCCD.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtCCCD.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCCCD.Location = new System.Drawing.Point(94, 54);
+            this.txtCCCD.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtCCCD.Name = "txtCCCD";
+            this.txtCCCD.PasswordChar = '\0';
+            this.txtCCCD.PlaceholderText = "Nhập vào CCCD của nhân viên";
+            this.txtCCCD.SelectedText = "";
+            this.txtCCCD.Size = new System.Drawing.Size(251, 30);
+            this.txtCCCD.TabIndex = 39;
+            this.txtCCCD.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lblCCCD
+            // 
+            this.lblCCCD.BackColor = System.Drawing.Color.Transparent;
+            this.lblCCCD.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCCCD.Location = new System.Drawing.Point(9, 55);
+            this.lblCCCD.Name = "lblCCCD";
+            this.lblCCCD.Size = new System.Drawing.Size(52, 25);
+            this.lblCCCD.TabIndex = 38;
+            this.lblCCCD.Text = "CCCD:";
+            // 
+            // lblTimKiem
+            // 
+            this.lblTimKiem.BackColor = System.Drawing.Color.Transparent;
+            this.lblTimKiem.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTimKiem.Location = new System.Drawing.Point(191, 5);
+            this.lblTimKiem.Name = "lblTimKiem";
+            this.lblTimKiem.Size = new System.Drawing.Size(98, 32);
+            this.lblTimKiem.TabIndex = 37;
+            this.lblTimKiem.Text = "Tìm kiếm";
+            this.lblTimKiem.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // uc_SearchEdit
             // 

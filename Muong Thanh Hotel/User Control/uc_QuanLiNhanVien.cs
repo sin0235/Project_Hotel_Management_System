@@ -53,6 +53,7 @@ namespace Muong_Thanh_Hotel.User_Control
         private void uc_QuanLiNhanVien_Load(object sender, EventArgs e)
         {
             closeAll();
+            uc_ThemNhanVien1.Visible = true;
         }
     }
 }

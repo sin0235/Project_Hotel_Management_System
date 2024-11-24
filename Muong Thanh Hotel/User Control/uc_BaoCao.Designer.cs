@@ -38,12 +38,12 @@
             this.lblQuanLINhanVien = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.btnBaoCaoLoiNhuan = new Guna.UI2.WinForms.Guna2Button();
             this.dataTableOfProfit = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.dataTableOfSalary = new Guna.UI2.WinForms.Guna2DataGridView();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnBaoCaoLoiNhuan = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataTableOfProfit)).BeginInit();
             this.guna2GradientPanel2.SuspendLayout();
@@ -80,6 +80,30 @@
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(750, 939);
             this.guna2GradientPanel1.TabIndex = 23;
+            // 
+            // btnBaoCaoLoiNhuan
+            // 
+            this.btnBaoCaoLoiNhuan.Animated = true;
+            this.btnBaoCaoLoiNhuan.AutoRoundedCorners = true;
+            this.btnBaoCaoLoiNhuan.BackColor = System.Drawing.Color.Transparent;
+            this.btnBaoCaoLoiNhuan.BorderRadius = 18;
+            this.btnBaoCaoLoiNhuan.BorderThickness = 1;
+            this.btnBaoCaoLoiNhuan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBaoCaoLoiNhuan.DefaultAutoSize = true;
+            this.btnBaoCaoLoiNhuan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBaoCaoLoiNhuan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBaoCaoLoiNhuan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBaoCaoLoiNhuan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBaoCaoLoiNhuan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(194)))), ((int)(((byte)(235)))));
+            this.btnBaoCaoLoiNhuan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBaoCaoLoiNhuan.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.btnBaoCaoLoiNhuan.IndicateFocus = true;
+            this.btnBaoCaoLoiNhuan.Location = new System.Drawing.Point(152, 3);
+            this.btnBaoCaoLoiNhuan.Name = "btnBaoCaoLoiNhuan";
+            this.btnBaoCaoLoiNhuan.Size = new System.Drawing.Size(205, 39);
+            this.btnBaoCaoLoiNhuan.TabIndex = 25;
+            this.btnBaoCaoLoiNhuan.Text = "Báo cáo lợi nhuận";
+            this.btnBaoCaoLoiNhuan.UseTransparentBackground = true;
             // 
             // dataTableOfProfit
             // 
@@ -223,29 +247,6 @@
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(183, 37);
             this.guna2HtmlLabel2.TabIndex = 24;
             this.guna2HtmlLabel2.Text = "Lương nhân viên";
-            // 
-            // btnBaoCaoLoiNhuan
-            // 
-            this.btnBaoCaoLoiNhuan.Animated = true;
-            this.btnBaoCaoLoiNhuan.AutoRoundedCorners = true;
-            this.btnBaoCaoLoiNhuan.BackColor = System.Drawing.Color.Transparent;
-            this.btnBaoCaoLoiNhuan.BorderRadius = 18;
-            this.btnBaoCaoLoiNhuan.BorderThickness = 1;
-            this.btnBaoCaoLoiNhuan.DefaultAutoSize = true;
-            this.btnBaoCaoLoiNhuan.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnBaoCaoLoiNhuan.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnBaoCaoLoiNhuan.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnBaoCaoLoiNhuan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnBaoCaoLoiNhuan.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(194)))), ((int)(((byte)(235)))));
-            this.btnBaoCaoLoiNhuan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBaoCaoLoiNhuan.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.btnBaoCaoLoiNhuan.IndicateFocus = true;
-            this.btnBaoCaoLoiNhuan.Location = new System.Drawing.Point(152, 3);
-            this.btnBaoCaoLoiNhuan.Name = "btnBaoCaoLoiNhuan";
-            this.btnBaoCaoLoiNhuan.Size = new System.Drawing.Size(205, 39);
-            this.btnBaoCaoLoiNhuan.TabIndex = 25;
-            this.btnBaoCaoLoiNhuan.Text = "Báo cáo lợi nhuận";
-            this.btnBaoCaoLoiNhuan.UseTransparentBackground = true;
             // 
             // uc_BaoCao
             // 

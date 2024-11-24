@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle46 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle47 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle48 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -155,26 +155,26 @@
             // 
             // guna2DataGridView1
             // 
-            dataGridViewCellStyle22.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
-            dataGridViewCellStyle23.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle23.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle46.BackColor = System.Drawing.Color.White;
+            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle46;
+            dataGridViewCellStyle47.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle47.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle47.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle47.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle47.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle47.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle47;
             this.guna2DataGridView1.ColumnHeadersHeight = 4;
             this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle24.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle24.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle24.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle48.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle48.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle48.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle48.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle48.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle48.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle48.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle48;
             this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.Location = new System.Drawing.Point(51, 13);
             this.guna2DataGridView1.Name = "guna2DataGridView1";
@@ -279,6 +279,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(210, 43);
             this.guna2Button1.TabIndex = 1;
             this.guna2Button1.Text = "Phòng trống";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2Panel2
             // 
@@ -337,6 +338,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(210, 43);
             this.guna2Button2.TabIndex = 1;
             this.guna2Button2.Text = "Phòng trống";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Panel4
             // 
@@ -395,6 +397,7 @@
             this.guna2Button4.Size = new System.Drawing.Size(210, 43);
             this.guna2Button4.TabIndex = 1;
             this.guna2Button4.Text = "Phòng trống";
+            this.guna2Button4.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
             // guna2Panel8
             // 
@@ -453,6 +456,7 @@
             this.guna2Button6.Size = new System.Drawing.Size(210, 43);
             this.guna2Button6.TabIndex = 1;
             this.guna2Button6.Text = "Phòng trống";
+            this.guna2Button6.Click += new System.EventHandler(this.guna2Button6_Click);
             // 
             // guna2Panel12
             // 
@@ -503,11 +507,12 @@
             this.guna2Button5.FillColor = System.Drawing.Color.LightGreen;
             this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.Location = new System.Drawing.Point(48, 34);
+            this.guna2Button5.Location = new System.Drawing.Point(44, 34);
             this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(153, 43);
+            this.guna2Button5.Size = new System.Drawing.Size(176, 43);
             this.guna2Button5.TabIndex = 1;
             this.guna2Button5.Text = "Phòng trống";
+            this.guna2Button5.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
             // guna2Panel10
             // 
@@ -566,6 +571,7 @@
             this.guna2Button3.Size = new System.Drawing.Size(210, 43);
             this.guna2Button3.TabIndex = 1;
             this.guna2Button3.Text = "Phòng trống";
+            this.guna2Button3.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // guna2Panel6
             // 
@@ -624,6 +630,7 @@
             this.guna2Button13.Size = new System.Drawing.Size(210, 43);
             this.guna2Button13.TabIndex = 1;
             this.guna2Button13.Text = "Phòng trống";
+            this.guna2Button13.Click += new System.EventHandler(this.guna2Button13_Click);
             // 
             // guna2Panel26
             // 
@@ -682,6 +689,7 @@
             this.guna2Button11.Size = new System.Drawing.Size(210, 43);
             this.guna2Button11.TabIndex = 1;
             this.guna2Button11.Text = "Phòng trống";
+            this.guna2Button11.Click += new System.EventHandler(this.guna2Button11_Click);
             // 
             // guna2Panel22
             // 
@@ -740,6 +748,7 @@
             this.guna2Button7.Size = new System.Drawing.Size(210, 43);
             this.guna2Button7.TabIndex = 1;
             this.guna2Button7.Text = "Phòng trống";
+            this.guna2Button7.Click += new System.EventHandler(this.guna2Button7_Click);
             // 
             // guna2Panel14
             // 
@@ -798,6 +807,7 @@
             this.guna2Button8.Size = new System.Drawing.Size(210, 43);
             this.guna2Button8.TabIndex = 1;
             this.guna2Button8.Text = "Phòng trống";
+            this.guna2Button8.Click += new System.EventHandler(this.guna2Button8_Click);
             // 
             // guna2Panel16
             // 
@@ -856,6 +866,7 @@
             this.guna2Button9.Size = new System.Drawing.Size(210, 43);
             this.guna2Button9.TabIndex = 1;
             this.guna2Button9.Text = "Phòng trống";
+            this.guna2Button9.Click += new System.EventHandler(this.guna2Button9_Click);
             // 
             // guna2Panel18
             // 
@@ -914,6 +925,7 @@
             this.guna2Button10.Size = new System.Drawing.Size(210, 43);
             this.guna2Button10.TabIndex = 1;
             this.guna2Button10.Text = "Phòng trống";
+            this.guna2Button10.Click += new System.EventHandler(this.guna2Button10_Click);
             // 
             // guna2Panel20
             // 
@@ -972,6 +984,7 @@
             this.guna2Button12.Size = new System.Drawing.Size(210, 43);
             this.guna2Button12.TabIndex = 1;
             this.guna2Button12.Text = "Phòng trống";
+            this.guna2Button12.Click += new System.EventHandler(this.guna2Button12_Click);
             // 
             // guna2Panel24
             // 
@@ -1030,6 +1043,7 @@
             this.guna2Button14.Size = new System.Drawing.Size(210, 43);
             this.guna2Button14.TabIndex = 1;
             this.guna2Button14.Text = "Phòng trống";
+            this.guna2Button14.Click += new System.EventHandler(this.guna2Button14_Click);
             // 
             // guna2Panel28
             // 
@@ -1088,6 +1102,7 @@
             this.guna2Button15.Size = new System.Drawing.Size(210, 43);
             this.guna2Button15.TabIndex = 1;
             this.guna2Button15.Text = "Phòng trống";
+            this.guna2Button15.Click += new System.EventHandler(this.guna2Button15_Click);
             // 
             // guna2Panel30
             // 
@@ -1146,6 +1161,7 @@
             this.guna2Button16.Size = new System.Drawing.Size(210, 43);
             this.guna2Button16.TabIndex = 1;
             this.guna2Button16.Text = "Phòng trống";
+            this.guna2Button16.Click += new System.EventHandler(this.guna2Button16_Click);
             // 
             // guna2Panel32
             // 

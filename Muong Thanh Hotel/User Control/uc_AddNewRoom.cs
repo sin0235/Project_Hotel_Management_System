@@ -13,10 +13,12 @@ namespace Muong_Thanh_Hotel.User_Control
 {
     public partial class uc_AddNewRoom : UserControl
     {
+        projectDatadbmlDataContext ds = new projectDatadbmlDataContext();
+        danhSachPhong dsPhong = new danhSachPhong();
+
         public uc_AddNewRoom()
         {
             InitializeComponent();
-
         }
 
 
@@ -45,8 +47,10 @@ namespace Muong_Thanh_Hotel.User_Control
         private void uc_AddNewRoom_Load(object sender, EventArgs e)
         {
             closeAll();
+
             LoadRoomData();
             uc_ThemPhongMoi1.Visible = true;
+
         }
 
         private void btnFindAndEdit_Click(object sender, EventArgs e)
@@ -97,5 +101,6 @@ namespace Muong_Thanh_Hotel.User_Control
                 DisplayRoomInDataGridView(room);
             }
         }
+
     }
 }

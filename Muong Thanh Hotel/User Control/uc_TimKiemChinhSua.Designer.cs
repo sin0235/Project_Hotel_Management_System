@@ -30,43 +30,32 @@
         {
             this.components = new System.ComponentModel.Container();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+
             this.btnSearch = new Guna.UI2.WinForms.Guna2Button();
             this.txtSoPhong = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblNhapThongTin = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+
+
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+
             this.btnEdit = new Guna.UI2.WinForms.Guna2Button();
+          
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtIsAvailable = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtTinhTrang = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtLoaiPhong = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtGiaPhong = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+
             this.txtLoaiGiuong = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtSoTang = new Guna.UI2.WinForms.Guna2TextBox();
             this.lblTang = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Panel1.SuspendLayout();
-            this.guna2Panel2.SuspendLayout();
-            this.SuspendLayout();
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.guna2Panel1.BorderRadius = 15;
-            this.guna2Panel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            this.guna2Panel1.BorderThickness = 1;
-            this.guna2Panel1.Controls.Add(this.btnSearch);
-            this.guna2Panel1.Controls.Add(this.txtSoPhong);
-            this.guna2Panel1.Controls.Add(this.lblNhapThongTin);
-            this.guna2Panel1.Location = new System.Drawing.Point(12, 13);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(485, 111);
-            this.guna2Panel1.TabIndex = 0;
-            // 
+
             // btnSearch
             // 
             this.btnSearch.Animated = true;
@@ -89,6 +78,7 @@
             this.btnSearch.Text = "Search";
             this.btnSearch.UseTransparentBackground = true;
             this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+          
             // 
             // txtSoPhong
             // 
@@ -104,13 +94,18 @@
             this.txtSoPhong.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSoPhong.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSoPhong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+
             this.txtSoPhong.Location = new System.Drawing.Point(46, 62);
+
+
             this.txtSoPhong.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSoPhong.Name = "txtSoPhong";
             this.txtSoPhong.PasswordChar = '\0';
             this.txtSoPhong.PlaceholderText = "Nhập số phòng cần tìm kiếm";
             this.txtSoPhong.SelectedText = "";
+          
             this.txtSoPhong.Size = new System.Drawing.Size(278, 30);
+
             this.txtSoPhong.TabIndex = 39;
             this.txtSoPhong.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -150,6 +145,7 @@
             this.guna2Panel2.Size = new System.Drawing.Size(506, 674);
             this.guna2Panel2.TabIndex = 20;
             // 
+          
             // label1
             // 
             this.label1.AutoSize = true;
@@ -159,40 +155,50 @@
             this.label1.Size = new System.Drawing.Size(119, 28);
             this.label1.TabIndex = 71;
             this.label1.Text = "Loại giường";
+
+
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(26, 419);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(105, 28);
+
+
             this.label6.TabIndex = 70;
             this.label6.Text = "Giá phòng";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(26, 352);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(153, 28);
+
             this.label5.TabIndex = 69;
             this.label5.Text = "Tình trạng thuê";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(26, 285);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(169, 28);
+
             this.label4.TabIndex = 68;
             this.label4.Text = "Tình trạng phòng";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
+
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(26, 151);
             this.label3.Name = "label3";
@@ -217,6 +223,7 @@
             this.btnEdit.TabIndex = 64;
             this.btnEdit.Text = "Cập nhật thông tin";
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+
             // 
             // guna2HtmlLabel1
             // 
@@ -326,6 +333,7 @@
             this.guna2Elipse1.BorderRadius = 30;
             this.guna2Elipse1.TargetControl = this;
             // 
+
             // txtLoaiGiuong
             // 
             this.txtLoaiGiuong.AutoRoundedCorners = true;
@@ -383,6 +391,7 @@
             this.lblTang.TabIndex = 73;
             this.lblTang.Text = "Tầng:";
             // 
+
             // uc_TimKiemChinhSua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
