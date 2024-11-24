@@ -25,8 +25,8 @@ namespace Muong_Thanh_Hotel
 
         private void button1_Click(object sender, EventArgs e)
         {
-            GuestDashboard ds = new GuestDashboard();
-            ds.Show();
+            frmLoginForGuest newForm = new frmLoginForGuest();
+            newForm.Show();
             
         }
 
