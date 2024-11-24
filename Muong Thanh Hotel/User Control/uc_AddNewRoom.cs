@@ -47,7 +47,10 @@ namespace Muong_Thanh_Hotel.User_Control
         private void uc_AddNewRoom_Load(object sender, EventArgs e)
         {
             closeAll();
-            uc_ThemPhongMoi1.Visible=true;
+
+            LoadRoomData();
+            uc_ThemPhongMoi1.Visible = true;
+
         }
 
         private void btnFindAndEdit_Click(object sender, EventArgs e)
@@ -55,6 +58,48 @@ namespace Muong_Thanh_Hotel.User_Control
             closeAll();
             uc_TimKiemChinhSua1.BringToFront();
             uc_TimKiemChinhSua1.Visible = true;
+        }
+
+        private void LoadRoomData()
+        {
+            using (var db = new projectDatadbmlDataContext())
+            {
+                dataTable.DataSource = db.danhSachPhongs.ToList();
+            }
+        }
+        private void uc_ThemPhongMoi1_RoomAdded(object sender, EventArgs e)
+        {
+            LoadRoomData();
+        }
+
+
+
+        private void DisplayRoomInDataGridView(danhSachPhong room)
+        {
+            var roomList = new List<danhSachPhong> { room };
+            dataTable.DataSource = null;
+            dataTable.DataSource = roomList;
+            dataTable.Refresh();
+        }
+
+        public void uc_XoaPhong1_RoomDeleted(object sender, EventArgs e)
+        {
+            LoadRoomData();
+        }
+        public void uc_XoaPhong1_changeTable(object sender, danhSachPhong room)
+        {
+            if (room != null)
+            {
+                DisplayRoomInDataGridView(room);
+            }
+        }
+
+        public void uc_TimKiemChinhSua1_RoomSearch(object sender, danhSachPhong room)
+        {
+            if (room != null)
+            {
+                DisplayRoomInDataGridView(room);
+            }
         }
 
     }

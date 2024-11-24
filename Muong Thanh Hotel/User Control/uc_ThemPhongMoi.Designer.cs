@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.pnlThemPhong = new Guna.UI2.WinForms.Guna2Panel();
+            this.lblConfirm = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblNhapThongTin = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtIsAvailable = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txtTinhTrang = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -47,7 +48,6 @@
             this.lblLoaiPhong = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblSoPhong = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.lblConfirm = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlThemPhong.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,6 +79,18 @@
             this.pnlThemPhong.Name = "pnlThemPhong";
             this.pnlThemPhong.Size = new System.Drawing.Size(506, 674);
             this.pnlThemPhong.TabIndex = 20;
+            // 
+            // lblConfirm
+            // 
+            this.lblConfirm.BackColor = System.Drawing.Color.Transparent;
+            this.lblConfirm.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConfirm.ForeColor = System.Drawing.Color.Red;
+            this.lblConfirm.Location = new System.Drawing.Point(231, 545);
+            this.lblConfirm.Name = "lblConfirm";
+            this.lblConfirm.Size = new System.Drawing.Size(15, 25);
+            this.lblConfirm.TabIndex = 41;
+            this.lblConfirm.Text = "...";
+            this.lblConfirm.Visible = false;
             // 
             // lblNhapThongTin
             // 
@@ -126,11 +138,11 @@
             this.txtTinhTrang.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.txtTinhTrang.ItemHeight = 30;
             this.txtTinhTrang.Items.AddRange(new object[] {
-            "Tốt",
-            "Đang sửa chữa",
-            "Cần sửa chữa",
-            "Chưa dọn dẹp",
-            "Đã dọn dẹp"});
+            "Good",
+            "Repairing",
+            "Needs repair",
+            "Uncleaned",
+            "Cleaned up"});
             this.txtTinhTrang.Location = new System.Drawing.Point(231, 360);
             this.txtTinhTrang.Name = "txtTinhTrang";
             this.txtTinhTrang.Size = new System.Drawing.Size(241, 36);
@@ -350,18 +362,6 @@
             // 
             this.guna2Elipse1.BorderRadius = 20;
             this.guna2Elipse1.TargetControl = this;
-            // 
-            // lblConfirm
-            // 
-            this.lblConfirm.BackColor = System.Drawing.Color.Transparent;
-            this.lblConfirm.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblConfirm.ForeColor = System.Drawing.Color.Red;
-            this.lblConfirm.Location = new System.Drawing.Point(231, 545);
-            this.lblConfirm.Name = "lblConfirm";
-            this.lblConfirm.Size = new System.Drawing.Size(15, 25);
-            this.lblConfirm.TabIndex = 41;
-            this.lblConfirm.Text = "...";
-            this.lblConfirm.Visible = false;
             // 
             // uc_ThemPhongMoi
             // 

@@ -59,10 +59,12 @@
             // 
             this.btnXoa.AutoRoundedCorners = true;
             this.btnXoa.BackColor = System.Drawing.Color.Transparent;
+
+            this.btnXoa.BorderColor = System.Drawing.Color.Red;
             this.btnXoa.BorderRadius = 17;
             this.btnXoa.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.btnXoa.BorderThickness = 1;
-            this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
+
             this.btnXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -96,7 +98,9 @@
             this.btnFine.BorderRadius = 16;
             this.btnFine.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.btnFine.BorderThickness = 1;
+
             this.btnFine.Cursor = System.Windows.Forms.Cursors.Hand;
+
             this.btnFine.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnFine.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnFine.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));

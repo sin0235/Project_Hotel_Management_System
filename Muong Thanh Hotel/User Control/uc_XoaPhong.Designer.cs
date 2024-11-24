@@ -31,7 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnXoa = new Guna.UI2.WinForms.Guna2Button();
+
+            this.btnXoaPhong = new Guna.UI2.WinForms.Guna2Button();
+
             this.txtSoPhong = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.lblConfirm = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -47,7 +49,9 @@
             this.guna2Panel1.Controls.Add(this.lblConfirm);
             this.guna2Panel1.Controls.Add(this.btnFine);
             this.guna2Panel1.Controls.Add(this.label1);
-            this.guna2Panel1.Controls.Add(this.btnXoa);
+
+            this.guna2Panel1.Controls.Add(this.btnXoaPhong);
+
             this.guna2Panel1.Controls.Add(this.txtSoPhong);
             this.guna2Panel1.CustomBorderColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(182)))), ((int)(((byte)(251)))));
@@ -66,31 +70,34 @@
             this.label1.TabIndex = 38;
             this.label1.Text = "Nhập thông tin phòng cần xóa";
             // 
-            // btnXoa
+
+            // btnXoaPhong
             // 
-            this.btnXoa.Animated = true;
-            this.btnXoa.AutoRoundedCorners = true;
-            this.btnXoa.BackColor = System.Drawing.Color.Transparent;
-            this.btnXoa.BorderRadius = 20;
-            this.btnXoa.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            this.btnXoa.BorderThickness = 1;
-            this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnXoa.DefaultAutoSize = true;
-            this.btnXoa.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnXoa.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnXoa.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnXoa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnXoa.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(182)))), ((int)(((byte)(251)))));
-            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.btnXoa.ForeColor = System.Drawing.Color.Red;
-            this.btnXoa.IndicateFocus = true;
-            this.btnXoa.Location = new System.Drawing.Point(285, 313);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(153, 43);
-            this.btnXoa.TabIndex = 37;
-            this.btnXoa.Text = "Xóa phòng";
-            this.btnXoa.UseTransparentBackground = true;
-            this.btnXoa.Visible = false;
+            this.btnXoaPhong.Animated = true;
+            this.btnXoaPhong.AutoRoundedCorners = true;
+            this.btnXoaPhong.BackColor = System.Drawing.Color.Transparent;
+            this.btnXoaPhong.BorderColor = System.Drawing.Color.Red;
+            this.btnXoaPhong.BorderRadius = 18;
+            this.btnXoaPhong.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.btnXoaPhong.BorderThickness = 1;
+            this.btnXoaPhong.DefaultAutoSize = true;
+            this.btnXoaPhong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXoaPhong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXoaPhong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXoaPhong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXoaPhong.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(182)))), ((int)(((byte)(251)))));
+            this.btnXoaPhong.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.btnXoaPhong.ForeColor = System.Drawing.Color.Red;
+            this.btnXoaPhong.IndicateFocus = true;
+            this.btnXoaPhong.Location = new System.Drawing.Point(302, 278);
+            this.btnXoaPhong.Name = "btnXoaPhong";
+            this.btnXoaPhong.Size = new System.Drawing.Size(163, 39);
+            this.btnXoaPhong.TabIndex = 37;
+            this.btnXoaPhong.Text = "Xác nhận xóa";
+            this.btnXoaPhong.UseTransparentBackground = true;
+            this.btnXoaPhong.Visible = false;
+            this.btnXoaPhong.Click += new System.EventHandler(this.btnAddNewRoom_Click);
+
             // 
             // txtSoPhong
             // 
@@ -106,7 +113,9 @@
             this.txtSoPhong.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtSoPhong.Font = new System.Drawing.Font("Segoe UI", 10.2F);
             this.txtSoPhong.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSoPhong.Location = new System.Drawing.Point(15, 178);
+
+            this.txtSoPhong.Location = new System.Drawing.Point(25, 167);
+
             this.txtSoPhong.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtSoPhong.Name = "txtSoPhong";
             this.txtSoPhong.PasswordChar = '\0';
@@ -126,11 +135,13 @@
             this.lblConfirm.BackColor = System.Drawing.Color.Transparent;
             this.lblConfirm.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConfirm.ForeColor = System.Drawing.Color.Red;
-            this.lblConfirm.Location = new System.Drawing.Point(49, 242);
+
+            this.lblConfirm.Location = new System.Drawing.Point(52, 233);
             this.lblConfirm.Name = "lblConfirm";
-            this.lblConfirm.Size = new System.Drawing.Size(376, 25);
+            this.lblConfirm.Size = new System.Drawing.Size(351, 25);
             this.lblConfirm.TabIndex = 42;
-            this.lblConfirm.Text = "Vui lòng kiểm tra lại thông tin nhân viên cần xóa";
+            this.lblConfirm.Text = "Vui lòng kiểm tra lại thông tin phòng cần xóa";
+
             this.lblConfirm.Visible = false;
             // 
             // btnFine
@@ -140,7 +151,7 @@
             this.btnFine.BorderRadius = 16;
             this.btnFine.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
             this.btnFine.BorderThickness = 1;
-            this.btnFine.Cursor = System.Windows.Forms.Cursors.Hand;
+
             this.btnFine.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnFine.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnFine.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
@@ -148,7 +159,9 @@
             this.btnFine.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(182)))), ((int)(((byte)(251)))));
             this.btnFine.Font = new System.Drawing.Font("Segoe UI", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.btnFine.ForeColor = System.Drawing.Color.White;
-            this.btnFine.Location = new System.Drawing.Point(341, 184);
+
+            this.btnFine.Location = new System.Drawing.Point(353, 171);
+
             this.btnFine.Name = "btnFine";
             this.btnFine.Size = new System.Drawing.Size(124, 34);
             this.btnFine.TabIndex = 41;
@@ -174,7 +187,9 @@
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2TextBox txtSoPhong;
-        private Guna.UI2.WinForms.Guna2Button btnXoa;
+
+        private Guna.UI2.WinForms.Guna2Button btnXoaPhong;
+
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblConfirm;
