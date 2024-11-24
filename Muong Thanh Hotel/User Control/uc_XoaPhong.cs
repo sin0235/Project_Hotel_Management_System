@@ -21,5 +21,66 @@ namespace Muong_Thanh_Hotel.User_Control
         {
 
         }
+
+        public event EventHandler<danhSachPhong> RoomSearched;
+
+        private void btnFine_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int soPhong;
+                if (!int.TryParse(txtSoPhong.Text, out soPhong))
+                {
+                    MessageBox.Show("Vui lòng nhập số phòng hợp lệ!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                using (var db = new projectDatadbmlDataContext())
+                {
+                    var room = db.danhSachPhongs.SingleOrDefault(r => r.soPhong == soPhong);
+                    if (room != null)
+                    {
+                        RoomSearched?.Invoke(this, room);
+                        lblConfirm.Visible = true;
+                        btnAddNewRoom.Visible = true;
+                        MessageBox.Show("Tìm thấy phòng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không tìm thấy phòng với số phòng này!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public event EventHandler RoomDeleted;
+
+        private void btnAddNewRoom_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int soPhong = int.Parse(txtSoPhong.Text); 
+
+                using (var db = new projectDatadbmlDataContext())
+                {
+                    var roomToDelete = db.danhSachPhongs.SingleOrDefault(r => r.soPhong == soPhong);
+                    if (roomToDelete != null)
+                    {
+                        db.danhSachPhongs.DeleteOnSubmit(roomToDelete);
+                        db.SubmitChanges();
+                        RoomDeleted?.Invoke(this, EventArgs.Empty);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}");
+            }
+        }
+
     }
 }

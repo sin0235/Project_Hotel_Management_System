@@ -37,6 +37,8 @@ namespace Muong_Thanh_Hotel
 
         private void ManagerDashboard_Load(object sender, EventArgs e)
         {
+            closeAll();
+            uc_AddNewRoom1.Visible = true;
         }
 
         private void closeAll()

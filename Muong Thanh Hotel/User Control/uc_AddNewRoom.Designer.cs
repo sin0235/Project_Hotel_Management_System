@@ -201,6 +201,9 @@
             this.btnXoaPhong.TabIndex = 1;
             this.btnXoaPhong.Text = "Xóa phòng";
             this.btnXoaPhong.Click += new System.EventHandler(this.btnXoaPhong_Click);
+            uc_XoaPhong1.RoomDeleted += uc_XoaPhong1_RoomDeleted;
+            uc_XoaPhong1.RoomSearched += uc_XoaPhong1_changeTable;
+
             // 
             // btnThemPhong
             // 
@@ -261,6 +264,7 @@
             this.uc_ThemPhongMoi1.Size = new System.Drawing.Size(512, 681);
             this.uc_ThemPhongMoi1.TabIndex = 0;
             this.uc_ThemPhongMoi1.Visible = false;
+            uc_ThemPhongMoi1.RoomAdded += uc_ThemPhongMoi1_RoomAdded;
             // 
             // danhSachPhongTableAdapter
             // 

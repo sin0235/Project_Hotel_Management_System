@@ -82,6 +82,8 @@ namespace Muong_Thanh_Hotel.User_Control
                     txtLoaiGiuong.SelectedIndex = -1;
                     txtTinhTrang.SelectedIndex = -1;
                     lblConfirm.Visible = false;
+
+                    RoomAdded?.Invoke(this, EventArgs.Empty);
                 }
                 else
                 {
@@ -94,6 +96,7 @@ namespace Muong_Thanh_Hotel.User_Control
                 MessageBox.Show("Đã xảy ra lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+           public event EventHandler RoomAdded;
 
     }
 }
