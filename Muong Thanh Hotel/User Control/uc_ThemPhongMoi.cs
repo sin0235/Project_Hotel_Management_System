@@ -12,6 +12,8 @@ namespace Muong_Thanh_Hotel.User_Control
 {
     public partial class uc_ThemPhongMoi : UserControl
     {
+        projectDatadbmlDataContext ds = new projectDatadbmlDataContext();
+        Room newRoom = new Room();
         public uc_ThemPhongMoi()
         {
             InitializeComponent();
