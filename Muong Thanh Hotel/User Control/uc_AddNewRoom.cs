@@ -102,5 +102,10 @@ namespace Muong_Thanh_Hotel.User_Control
             }
         }
 
+        public void uc_TimKiemChinhSua1_EditRoom(object sender, EventArgs e)
+        {
+            LoadRoomData();
+        }
+
     }
 }

@@ -319,6 +319,7 @@
             this.uc_TimKiemChinhSua1.TabIndex = 2;
             this.uc_TimKiemChinhSua1.Visible = false;
             uc_TimKiemChinhSua1.RoomSearched += uc_TimKiemChinhSua1_RoomSearch;
+            uc_TimKiemChinhSua1.EditRoom += uc_TimKiemChinhSua1_EditRoom;
             // 
             // uc_XoaPhong1
             // 
