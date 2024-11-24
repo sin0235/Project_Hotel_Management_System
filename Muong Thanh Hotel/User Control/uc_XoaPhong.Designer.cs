@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnAddNewRoom = new Guna.UI2.WinForms.Guna2Button();
+            this.btnXoaPhong = new Guna.UI2.WinForms.Guna2Button();
             this.txtSoPhong = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.lblConfirm = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -47,7 +47,7 @@
             this.guna2Panel1.Controls.Add(this.lblConfirm);
             this.guna2Panel1.Controls.Add(this.btnFine);
             this.guna2Panel1.Controls.Add(this.label1);
-            this.guna2Panel1.Controls.Add(this.btnAddNewRoom);
+            this.guna2Panel1.Controls.Add(this.btnXoaPhong);
             this.guna2Panel1.Controls.Add(this.txtSoPhong);
             this.guna2Panel1.CustomBorderColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(182)))), ((int)(((byte)(251)))));
@@ -66,32 +66,32 @@
             this.label1.TabIndex = 38;
             this.label1.Text = "Nhập thông tin phòng cần xóa";
             // 
-            // btnAddNewRoom
+            // btnXoaPhong
             // 
-            this.btnAddNewRoom.Animated = true;
-            this.btnAddNewRoom.AutoRoundedCorners = true;
-            this.btnAddNewRoom.BackColor = System.Drawing.Color.Transparent;
-            this.btnAddNewRoom.BorderColor = System.Drawing.Color.Red;
-            this.btnAddNewRoom.BorderRadius = 18;
-            this.btnAddNewRoom.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            this.btnAddNewRoom.BorderThickness = 1;
-            this.btnAddNewRoom.DefaultAutoSize = true;
-            this.btnAddNewRoom.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAddNewRoom.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAddNewRoom.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAddNewRoom.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAddNewRoom.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(182)))), ((int)(((byte)(251)))));
-            this.btnAddNewRoom.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.btnAddNewRoom.ForeColor = System.Drawing.Color.Red;
-            this.btnAddNewRoom.IndicateFocus = true;
-            this.btnAddNewRoom.Location = new System.Drawing.Point(302, 278);
-            this.btnAddNewRoom.Name = "btnAddNewRoom";
-            this.btnAddNewRoom.Size = new System.Drawing.Size(163, 39);
-            this.btnAddNewRoom.TabIndex = 37;
-            this.btnAddNewRoom.Text = "Xác nhận xóa";
-            this.btnAddNewRoom.UseTransparentBackground = true;
-            this.btnAddNewRoom.Visible = false;
-            this.btnAddNewRoom.Click += new System.EventHandler(this.btnAddNewRoom_Click);
+            this.btnXoaPhong.Animated = true;
+            this.btnXoaPhong.AutoRoundedCorners = true;
+            this.btnXoaPhong.BackColor = System.Drawing.Color.Transparent;
+            this.btnXoaPhong.BorderColor = System.Drawing.Color.Red;
+            this.btnXoaPhong.BorderRadius = 18;
+            this.btnXoaPhong.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.btnXoaPhong.BorderThickness = 1;
+            this.btnXoaPhong.DefaultAutoSize = true;
+            this.btnXoaPhong.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnXoaPhong.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnXoaPhong.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnXoaPhong.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnXoaPhong.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(182)))), ((int)(((byte)(251)))));
+            this.btnXoaPhong.Font = new System.Drawing.Font("Segoe UI", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.btnXoaPhong.ForeColor = System.Drawing.Color.Red;
+            this.btnXoaPhong.IndicateFocus = true;
+            this.btnXoaPhong.Location = new System.Drawing.Point(302, 278);
+            this.btnXoaPhong.Name = "btnXoaPhong";
+            this.btnXoaPhong.Size = new System.Drawing.Size(163, 39);
+            this.btnXoaPhong.TabIndex = 37;
+            this.btnXoaPhong.Text = "Xác nhận xóa";
+            this.btnXoaPhong.UseTransparentBackground = true;
+            this.btnXoaPhong.Visible = false;
+            this.btnXoaPhong.Click += new System.EventHandler(this.btnAddNewRoom_Click);
             // 
             // txtSoPhong
             // 
@@ -174,7 +174,7 @@
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2TextBox txtSoPhong;
-        private Guna.UI2.WinForms.Guna2Button btnAddNewRoom;
+        private Guna.UI2.WinForms.Guna2Button btnXoaPhong;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblConfirm;

@@ -42,7 +42,7 @@ namespace Muong_Thanh_Hotel.User_Control
                     {
                         RoomSearched?.Invoke(this, room);
                         lblConfirm.Visible = true;
-                        btnAddNewRoom.Visible = true;
+                        btnXoaPhong.Visible = true;
                         MessageBox.Show("Tìm thấy phòng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else

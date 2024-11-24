@@ -246,6 +246,7 @@
             this.uc_TimKiemChinhSua1.Size = new System.Drawing.Size(512, 680);
             this.uc_TimKiemChinhSua1.TabIndex = 2;
             this.uc_TimKiemChinhSua1.Visible = false;
+            uc_TimKiemChinhSua1.RoomSearched += uc_TimKiemChinhSua1_RoomSearch;
             // 
             // uc_XoaPhong1
             // 

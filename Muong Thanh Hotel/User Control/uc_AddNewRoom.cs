@@ -89,5 +89,13 @@ namespace Muong_Thanh_Hotel.User_Control
                 DisplayRoomInDataGridView(room);
             }
         }
+
+        public void uc_TimKiemChinhSua1_RoomSearch(object sender, danhSachPhong room)
+        {
+            if (room != null)
+            {
+                DisplayRoomInDataGridView(room);
+            }
+        }
     }
 }
