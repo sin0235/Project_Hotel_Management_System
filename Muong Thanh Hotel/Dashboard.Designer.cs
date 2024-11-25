@@ -35,7 +35,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnQuanLi = new Guna.UI2.WinForms.Guna2Button();
             this.btnDatPhong = new Guna.UI2.WinForms.Guna2Button();
             this.btnHoaDon = new Guna.UI2.WinForms.Guna2Button();
             this.btnPhong = new Guna.UI2.WinForms.Guna2Button();
@@ -45,7 +44,6 @@
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.uC_AddRoom1 = new Muong_Thanh_Hotel.User_Control.UC_AddRoom();
             this.uC_CheckOut1 = new Muong_Thanh_Hotel.User_Control.UC_CheckOut();
-            this.uC_QuanLiKhachHang1 = new Muong_Thanh_Hotel.User_Control.UC_QuanLiKhachHang();
             this.uC_Room1 = new Muong_Thanh_Hotel.User_Control.UC_Room();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
@@ -60,7 +58,6 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.guna2CirclePictureBox1);
             this.panel2.Controls.Add(this.guna2PictureBox1);
-            this.panel2.Controls.Add(this.btnQuanLi);
             this.panel2.Controls.Add(this.btnDatPhong);
             this.panel2.Controls.Add(this.btnHoaDon);
             this.panel2.Controls.Add(this.btnPhong);
@@ -119,23 +116,6 @@
             this.guna2PictureBox1.TabIndex = 8;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // btnQuanLi
-            // 
-            this.btnQuanLi.BorderRadius = 18;
-            this.btnQuanLi.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnQuanLi.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnQuanLi.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnQuanLi.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnQuanLi.FillColor = System.Drawing.Color.White;
-            this.btnQuanLi.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnQuanLi.ForeColor = System.Drawing.Color.Black;
-            this.btnQuanLi.Location = new System.Drawing.Point(27, 805);
-            this.btnQuanLi.Name = "btnQuanLi";
-            this.btnQuanLi.Size = new System.Drawing.Size(251, 116);
-            this.btnQuanLi.TabIndex = 1;
-            this.btnQuanLi.Text = " Quản lí khách hàng";
-            this.btnQuanLi.Click += new System.EventHandler(this.guna2Button4_Click);
-            // 
             // btnDatPhong
             // 
             this.btnDatPhong.BorderRadius = 18;
@@ -146,7 +126,7 @@
             this.btnDatPhong.FillColor = System.Drawing.Color.White;
             this.btnDatPhong.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDatPhong.ForeColor = System.Drawing.Color.Black;
-            this.btnDatPhong.Location = new System.Drawing.Point(27, 496);
+            this.btnDatPhong.Location = new System.Drawing.Point(27, 525);
             this.btnDatPhong.Name = "btnDatPhong";
             this.btnDatPhong.Size = new System.Drawing.Size(251, 116);
             this.btnDatPhong.TabIndex = 2;
@@ -163,7 +143,7 @@
             this.btnHoaDon.FillColor = System.Drawing.Color.White;
             this.btnHoaDon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHoaDon.ForeColor = System.Drawing.Color.Black;
-            this.btnHoaDon.Location = new System.Drawing.Point(27, 647);
+            this.btnHoaDon.Location = new System.Drawing.Point(27, 708);
             this.btnHoaDon.Name = "btnHoaDon";
             this.btnHoaDon.Size = new System.Drawing.Size(251, 116);
             this.btnHoaDon.TabIndex = 4;
@@ -238,17 +218,9 @@
             this.uC_CheckOut1.Size = new System.Drawing.Size(1552, 1018);
             this.uC_CheckOut1.TabIndex = 15;
             // 
-            // uC_QuanLiKhachHang1
-            // 
-            this.uC_QuanLiKhachHang1.Location = new System.Drawing.Point(378, 102);
-            this.uC_QuanLiKhachHang1.Name = "uC_QuanLiKhachHang1";
-            this.uC_QuanLiKhachHang1.Size = new System.Drawing.Size(1552, 1018);
-            this.uC_QuanLiKhachHang1.TabIndex = 16;
-            this.uC_QuanLiKhachHang1.Load += new System.EventHandler(this.uC_QuanLiKhachHang1_Load);
-            // 
             // uC_Room1
             // 
-            this.uC_Room1.Location = new System.Drawing.Point(378, 102);
+            this.uC_Room1.Location = new System.Drawing.Point(378, 115);
             this.uC_Room1.Name = "uC_Room1";
             this.uC_Room1.Size = new System.Drawing.Size(1552, 1018);
             this.uC_Room1.TabIndex = 17;
@@ -261,7 +233,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1942, 1102);
             this.Controls.Add(this.uC_Room1);
-            this.Controls.Add(this.uC_QuanLiKhachHang1);
             this.Controls.Add(this.uC_CheckOut1);
             this.Controls.Add(this.uC_AddRoom1);
             this.Controls.Add(this.guna2Button2);
@@ -284,7 +255,6 @@
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2Button btnDatPhong;
         private Guna.UI2.WinForms.Guna2Button btnHoaDon;
-        private Guna.UI2.WinForms.Guna2Button btnQuanLi;
         private Guna.UI2.WinForms.Guna2Button btnPhong;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.Label label1;
@@ -296,7 +266,6 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private User_Control.UC_AddRoom uC_AddRoom1;
         private User_Control.UC_Room uC_Room1;
-        private User_Control.UC_QuanLiKhachHang uC_QuanLiKhachHang1;
         private User_Control.UC_CheckOut uC_CheckOut1;
     }
 }

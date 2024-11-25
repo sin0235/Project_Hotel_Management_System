@@ -45,9 +45,7 @@ namespace Muong_Thanh_Hotel
 
         private void guna2Button4_Click(object sender, EventArgs e)
         {
-            closeAll();
-            uC_QuanLiKhachHang1.Visible = true;
-            uC_QuanLiKhachHang1.BringToFront();
+            
 
         }
 
@@ -103,7 +101,7 @@ namespace Muong_Thanh_Hotel
         private void closeAll()
         {
             uC_Room1.Visible = false;
-            uC_QuanLiKhachHang1.Visible = false;
+            
             uC_AddRoom1.Visible = false;
             uC_CheckOut1.Visible = false;
 
