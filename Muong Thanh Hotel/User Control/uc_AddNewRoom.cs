@@ -27,6 +27,7 @@ namespace Muong_Thanh_Hotel.User_Control
             closeAll();
             uc_ThemPhongMoi1.BringToFront();
             uc_ThemPhongMoi1.Visible = true;
+            LoadRoomData();
         }
 
 
@@ -41,6 +42,7 @@ namespace Muong_Thanh_Hotel.User_Control
             closeAll();
             uc_XoaPhong1.BringToFront();
             uc_XoaPhong1.Visible = true;
+            LoadRoomData();
 
         }
 
@@ -58,6 +60,7 @@ namespace Muong_Thanh_Hotel.User_Control
             closeAll();
             uc_TimKiemChinhSua1.BringToFront();
             uc_TimKiemChinhSua1.Visible = true;
+            LoadRoomData();
         }
 
         private void LoadRoomData()
@@ -107,9 +110,5 @@ namespace Muong_Thanh_Hotel.User_Control
             LoadRoomData();
         }
 
-        private void uc_TimKiemChinhSua1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

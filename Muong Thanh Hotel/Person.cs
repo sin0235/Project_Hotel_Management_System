@@ -19,8 +19,8 @@ namespace Muong_Thanh_Hotel
         public DateTime birthDate{ get { return _birthDate; } set { _birthDate = value; } }
         public string gender{ get { return _gender; } set {_gender = value; } }
         public int indentityNumber {get { return _indentityNumber; } set { _indentityNumber = value; }}
-        public string phoneNumber {  get { return _phoneNumber; } set { phoneNumber = value; } }
-        public string address { get { return _address; } set { address = value; } }
+        public string phoneNumber {  get { return _phoneNumber; } set { _phoneNumber = value; } }
+        public string address { get { return _address; } set { _address = value; } }
         public string nationality { get { return _nationality; } set { _nationality = value; } }
 
         public Person(string name, DateTime birthDate, string gender, int indentityNumber, string phoneNumber, string address, string nationality)

@@ -39,5 +39,21 @@ namespace Muong_Thanh_Hotel
         {
 
         }
+
+        public danhSachNhanVien mapping()
+        {
+
+            return new danhSachNhanVien()
+            {
+                hoTen = name,
+                CCCD = indentityNumber,
+                ngaySInh = birthDate,
+                gioiTinh = gender,
+                diaChi = address, 
+                hireDate = hireDate,
+                sdt = phoneNumber,
+                quocTich = nationality
+            };
+        }
     }
 }
