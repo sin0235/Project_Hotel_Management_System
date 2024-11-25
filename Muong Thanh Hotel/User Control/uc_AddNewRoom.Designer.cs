@@ -51,10 +51,10 @@
             this.btnXoaPhong = new Guna.UI2.WinForms.Guna2Button();
             this.btnThemPhong = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.danhSachPhongTableAdapter1 = new Muong_Thanh_Hotel.ProjectDataDataSet1TableAdapters.danhSachPhongTableAdapter();
             this.uc_TimKiemChinhSua1 = new Muong_Thanh_Hotel.User_Control.uc_TimKiemChinhSua();
             this.uc_XoaPhong1 = new Muong_Thanh_Hotel.User_Control.uc_XoaPhong();
             this.uc_ThemPhongMoi1 = new Muong_Thanh_Hotel.User_Control.uc_ThemPhongMoi();
+            this.danhSachPhongTableAdapter1 = new Muong_Thanh_Hotel.ProjectDataDataSet1TableAdapters.danhSachPhongTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.danhSachPhongBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projectDataDataSet1BindingSource)).BeginInit();
@@ -269,9 +269,6 @@
             this.btnXoaPhong.TabIndex = 1;
             this.btnXoaPhong.Text = "Xóa phòng";
             this.btnXoaPhong.Click += new System.EventHandler(this.btnXoaPhong_Click);
-            uc_XoaPhong1.RoomDeleted += uc_XoaPhong1_RoomDeleted;
-            uc_XoaPhong1.RoomSearched += uc_XoaPhong1_changeTable;
-
             // 
             // btnThemPhong
             // 
@@ -306,10 +303,6 @@
             this.guna2Panel1.Size = new System.Drawing.Size(553, 714);
             this.guna2Panel1.TabIndex = 19;
             // 
-            // danhSachPhongTableAdapter1
-            // 
-            this.danhSachPhongTableAdapter1.ClearBeforeFill = true;
-            // 
             // uc_TimKiemChinhSua1
             // 
             this.uc_TimKiemChinhSua1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(182)))), ((int)(((byte)(251)))));
@@ -318,8 +311,7 @@
             this.uc_TimKiemChinhSua1.Size = new System.Drawing.Size(512, 680);
             this.uc_TimKiemChinhSua1.TabIndex = 2;
             this.uc_TimKiemChinhSua1.Visible = false;
-            uc_TimKiemChinhSua1.RoomSearched += uc_TimKiemChinhSua1_RoomSearch;
-            uc_TimKiemChinhSua1.EditRoom += uc_TimKiemChinhSua1_EditRoom;
+            this.uc_TimKiemChinhSua1.Load += new System.EventHandler(this.uc_TimKiemChinhSua1_Load);
             // 
             // uc_XoaPhong1
             // 
@@ -338,7 +330,10 @@
             this.uc_ThemPhongMoi1.Size = new System.Drawing.Size(512, 681);
             this.uc_ThemPhongMoi1.TabIndex = 0;
             this.uc_ThemPhongMoi1.Visible = false;
-            uc_ThemPhongMoi1.RoomAdded += uc_ThemPhongMoi1_RoomAdded;
+            // 
+            // danhSachPhongTableAdapter1
+            // 
+            this.danhSachPhongTableAdapter1.ClearBeforeFill = true;
             // 
             // uc_AddNewRoom
             // 

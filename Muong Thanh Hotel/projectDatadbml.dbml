@@ -11,6 +11,26 @@
       <Column Name="ngaySinh" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.danhSachPhong" Member="danhSachPhongs">
+    <Type Name="danhSachPhong">
+      <Column Name="soPhong" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="loaiPhong" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="soTang" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="gia" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="trangThaiPhong" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="loaiGiuong" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="isAvailable" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.danhSachYeuCau" Member="danhSachYeuCaus">
+    <Type Name="danhSachYeuCau">
+      <Column Name="maYeuCau" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CCCD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="soPhong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="maDichVu" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="trangThaiXuLi" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.danhSachNhanVien" Member="danhSachNhanViens">
     <Type Name="danhSachNhanVien">
       <Column Name="CCCD" Type="System.Int32" DbType="Int" CanBeNull="true" />
@@ -22,17 +42,6 @@
       <Column Name="quocTich" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="luong" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="hireDate" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.danhSachPhong" Member="danhSachPhongs">
-    <Type Name="danhSachPhong">
-      <Column Name="soPhong" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="loaiPhong" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="soTang" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="gia" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="trangThaiPhong" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="loaiGiuong" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="isAvailable" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

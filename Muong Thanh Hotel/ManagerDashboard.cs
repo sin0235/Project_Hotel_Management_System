@@ -79,5 +79,6 @@ namespace Muong_Thanh_Hotel
             uc_QuanLiNhanVien1.BringToFront();
             uc_QuanLiNhanVien1.Visible = true;
         }
+
     }
 }
