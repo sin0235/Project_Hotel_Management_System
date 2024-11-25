@@ -13,7 +13,6 @@ namespace Muong_Thanh_Hotel
     public partial class dangKiPhong : Form
     {
         Guest newGuest;
-        Room newRoom = new Room();
 
 
         public dangKiPhong()
@@ -73,7 +72,7 @@ namespace Muong_Thanh_Hotel
 
         private void btnDatPhong_Click(object sender, EventArgs e)
         {
-
+           
             try
             {
                 if (newGuest == null)
@@ -92,13 +91,12 @@ namespace Muong_Thanh_Hotel
                     db.danhSachKhachHangs.InsertOnSubmit(newGuest.mappingDanhSachKhachHang());
                     StringBuilder maYC = new StringBuilder();
                     maYC.Append(newGuest.indentityNumber.ToString());
-                    maYC.Append(newRoom.soPhong.ToString());
+                    maYC.Append(room.soPhong.ToString());
                     
                     danhSachYeuCau newDS = new danhSachYeuCau()
                     {
                         CCCD = newGuest.indentityNumber,
                         maYeuCau = maYC.ToString(),
-                        maDichVu = null,
                         soPhong = soPhong,
                         trangThaiXuLi = "Pending"
 
@@ -166,6 +164,11 @@ namespace Muong_Thanh_Hotel
         }
 
         private void dangKiPhong_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

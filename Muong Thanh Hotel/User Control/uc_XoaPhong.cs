@@ -24,7 +24,7 @@ namespace Muong_Thanh_Hotel.User_Control
 
         public event EventHandler<danhSachPhong> RoomSearched;
 
-        private void btnFine_Click(object sender, EventArgs e)
+        private void btnFind_Click(object sender, EventArgs e)
         {
             try
             {
@@ -40,6 +40,7 @@ namespace Muong_Thanh_Hotel.User_Control
                     var room = db.danhSachPhongs.SingleOrDefault(r => r.soPhong == soPhong);
                     if (room != null)
                     {
+                        lblConfirm.Visible = true;
                         RoomSearched?.Invoke(this, room);
                         lblConfirm.Visible = true;
                         btnXoaPhong.Visible = true;

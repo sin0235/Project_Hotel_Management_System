@@ -42,8 +42,10 @@
             this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.quocTichDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hireDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.danhSachNhanVienBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.danhSachNhanVienBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.projectDataDataSet1 = new Muong_Thanh_Hotel.ProjectDataDataSet1();
+            this.danhSachNhanVienBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.danhSachNhanVienBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lblQuanLINhanVien = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlFunc = new Guna.UI2.WinForms.Guna2Panel();
             this.btnFindAndEdit = new Guna.UI2.WinForms.Guna2Button();
@@ -57,8 +59,10 @@
             this.projectDataDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.danhSachNhanVienTableAdapter = new Muong_Thanh_Hotel.ProjectDataDataSet1TableAdapters.danhSachNhanVienTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataTableOfEmployee)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.danhSachNhanVienBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.danhSachNhanVienBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.projectDataDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.danhSachNhanVienBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.danhSachNhanVienBindingSource)).BeginInit();
             this.pnlFunc.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.projectDataDataSetBindingSource)).BeginInit();
@@ -93,8 +97,8 @@
             this.diaChiDataGridViewTextBoxColumn,
             this.quocTichDataGridViewTextBoxColumn,
             this.hireDateDataGridViewTextBoxColumn});
-            this.dataTableOfEmployee.DataSource = this.danhSachNhanVienBindingSource;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.dataTableOfEmployee.DataSource = this.danhSachNhanVienBindingSource2;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
@@ -105,9 +109,9 @@
             this.dataTableOfEmployee.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(201)))), ((int)(((byte)(231)))));
             this.dataTableOfEmployee.Location = new System.Drawing.Point(14, 64);
             this.dataTableOfEmployee.Name = "dataTableOfEmployee";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -197,15 +201,25 @@
             this.hireDateDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.hireDateDataGridViewTextBoxColumn.Name = "hireDateDataGridViewTextBoxColumn";
             // 
-            // danhSachNhanVienBindingSource
+            // danhSachNhanVienBindingSource2
             // 
-            this.danhSachNhanVienBindingSource.DataMember = "danhSachNhanVien";
-            this.danhSachNhanVienBindingSource.DataSource = this.projectDataDataSet1;
+            this.danhSachNhanVienBindingSource2.DataMember = "danhSachNhanVien";
+            this.danhSachNhanVienBindingSource2.DataSource = this.projectDataDataSet1;
             // 
             // projectDataDataSet1
             // 
             this.projectDataDataSet1.DataSetName = "ProjectDataDataSet1";
             this.projectDataDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // danhSachNhanVienBindingSource1
+            // 
+            this.danhSachNhanVienBindingSource1.DataMember = "danhSachNhanVien";
+            this.danhSachNhanVienBindingSource1.DataSource = this.projectDataDataSet1;
+            // 
+            // danhSachNhanVienBindingSource
+            // 
+            this.danhSachNhanVienBindingSource.DataMember = "danhSachNhanVien";
+            this.danhSachNhanVienBindingSource.DataSource = this.projectDataDataSet1;
             // 
             // lblQuanLINhanVien
             // 
@@ -309,6 +323,8 @@
             this.uc_SearchEdit1.Size = new System.Drawing.Size(498, 691);
             this.uc_SearchEdit1.TabIndex = 2;
             this.uc_SearchEdit1.Visible = false;
+            uc_SearchEdit1.timDanhSachNhanVien += uc_XoaNhanVien1_TimDanhSachNhanVien;
+            uc_SearchEdit1.suaNhanVien += uc_SearchEdit1_SuaNhanVien;
             // 
             // uc_XoaNhanVien1
             // 
@@ -319,6 +335,8 @@
             this.uc_XoaNhanVien1.TabIndex = 1;
             this.uc_XoaNhanVien1.Visible = false;
             this.uc_XoaNhanVien1.Load += new System.EventHandler(this.uc_XoaNhanVien1_Load);
+            uc_XoaNhanVien1.xoaNhanVien += uc_XoaNhanVien1_XoaNhanVien;
+            uc_XoaNhanVien1.timDanhSachNhanVien += uc_XoaNhanVien1_TimDanhSachNhanVien;
             // 
             // uc_ThemNhanVien1
             // 
@@ -328,6 +346,7 @@
             this.uc_ThemNhanVien1.Size = new System.Drawing.Size(491, 691);
             this.uc_ThemNhanVien1.TabIndex = 0;
             this.uc_ThemNhanVien1.Visible = false;
+            uc_ThemNhanVien1.themNhanVien += uc_ThemNhanVien1_themNhanVien;
             // 
             // guna2Elipse1
             // 
@@ -351,8 +370,10 @@
             this.Size = new System.Drawing.Size(1552, 1018);
             this.Load += new System.EventHandler(this.uc_QuanLiNhanVien_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataTableOfEmployee)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.danhSachNhanVienBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.danhSachNhanVienBindingSource2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.projectDataDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.danhSachNhanVienBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.danhSachNhanVienBindingSource)).EndInit();
             this.pnlFunc.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.projectDataDataSetBindingSource)).EndInit();
@@ -386,5 +407,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn diaChiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn quocTichDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn hireDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource danhSachNhanVienBindingSource1;
+        private System.Windows.Forms.BindingSource danhSachNhanVienBindingSource2;
     }
 }

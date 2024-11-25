@@ -11,28 +11,17 @@
       <Column Name="isAvailable" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.danhSachNhanVien" Member="danhSachNhanViens">
-    <Type Name="danhSachNhanVien">
-      <Column Name="CCCD" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="hoTen" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="gioiTinh" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="ngaySInh" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="sdt" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="diaChi" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="quocTich" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="luong" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="hireDate" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+  <Table Name="dbo.dichVu" Member="dichVus">
+    <Type Name="dichVu">
+      <Column Name="maDichVu" Type="System.String" DbType="NVarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tenDichVu" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="donGia" Type="System.Double" DbType="Float" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.danhSachKhachHang" Member="danhSachKhachHangs">
-    <Type Name="danhSachKhachHang">
+  <Table Name="dbo.danhSachQuanLiDichVu" Member="danhSachQuanLiDichVus">
+    <Type Name="danhSachQuanLiDichVu">
       <Column Name="CCCD" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="hoTen" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="gioiTinh" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="sdt" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="diaChi" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="quocTich" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="ngaySinh" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="maDichVu" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.danhSachYeuCau" Member="danhSachYeuCaus">
@@ -40,8 +29,32 @@
       <Column Name="maYeuCau" Type="System.String" DbType="NVarChar(25) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="CCCD" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="soPhong" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="maDichVu" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
       <Column Name="trangThaiXuLi" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.danhSachKhachHang" Member="danhSachKhachHangs">
+    <Type Name="danhSachKhachHang">
+      <Column Name="CCCD" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="hoTen" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="gioiTinh" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="sdt" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="diaChi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="quocTich" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ngaySinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ngayThue" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ngayTraPhong" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.danhSachNhanVien" Member="danhSachNhanViens">
+    <Type Name="danhSachNhanVien">
+      <Column Name="CCCD" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="hoTen" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="gioiTinh" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="ngaySInh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="sdt" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="diaChi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="quocTich" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="hireDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
     </Type>
   </Table>
 </Database>
