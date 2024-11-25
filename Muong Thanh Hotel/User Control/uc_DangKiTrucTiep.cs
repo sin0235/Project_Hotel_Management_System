@@ -8,28 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Muong_Thanh_Hotel
+namespace Muong_Thanh_Hotel.User_Control
 {
-    public partial class dangKiPhong : Form
+    public partial class uc_DangKiTrucTiep : UserControl
     {
-        Guest newGuest;
-
-
-        public dangKiPhong()
+        private Guest newGuest;
+        public uc_DangKiTrucTiep()
         {
             InitializeComponent();
         }
 
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
         private void btnXacNhan_Click(object sender, EventArgs e)
         {
-
             try
             {
+
                 if (string.IsNullOrWhiteSpace(txtHoVaTen.Text))
                     throw new Exception("Họ và tên không được để trống.");
                 if (txtGioiTinh.SelectedItem == null)
@@ -70,54 +63,7 @@ namespace Muong_Thanh_Hotel
 
         }
 
-        private void btnDatPhong_Click(object sender, EventArgs e)
-        {
-
-            try
-            {
-                if (newGuest == null)
-                {
-                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin khách hàng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
-                }
-
-
-                using (var db = new projectDatadbmlDataContext())
-                {
-                    int soPhong = int.Parse(cmbChonPhong.SelectedValue.ToString());
-                    var room = db.danhSachPhongs.SingleOrDefault(r => r.soPhong == soPhong);
-                    room.isAvailable = "Not Available";
-
-                    db.danhSachKhachHangs.InsertOnSubmit(newGuest.mappingDanhSachKhachHang());
-                    StringBuilder maYC = new StringBuilder();
-                    maYC.Append(newGuest.indentityNumber.ToString());
-                    maYC.Append(room.soPhong.ToString());
-
-                    danhSachYeuCau newDS = new danhSachYeuCau()
-                    {
-                        CCCD = newGuest.indentityNumber,
-                        maYeuCau = maYC.ToString(),
-                        soPhong = soPhong,
-                        trangThaiXuLi = "Pending"
-
-                    };
-
-                    db.danhSachYeuCaus.InsertOnSubmit(newDS);
-                    db.SubmitChanges();
-
-                    MessageBox.Show("Quy trình đặt phòng hoàn tất!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    Close();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Lỗi: {ex.Message}", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-
-            }
-        }
-
-
-        private void btnLocPhong_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
             try
             {
@@ -163,14 +109,47 @@ namespace Muong_Thanh_Hotel
             }
         }
 
-        private void dangKiPhong_Load(object sender, EventArgs e)
+        private void btnDatPhong_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (newGuest == null)
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin khách hàng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
 
-        }
 
-        private void guna2GradientPanel1_Paint(object sender, PaintEventArgs e)
-        {
+                using (var db = new projectDatadbmlDataContext())
+                {
+                    int soPhong = int.Parse(cmbChonPhong.SelectedValue.ToString());
+                    var room = db.danhSachPhongs.SingleOrDefault(r => r.soPhong == soPhong);
+                    room.isAvailable = "Not Available";
 
+                    db.danhSachKhachHangs.InsertOnSubmit(newGuest.mappingDanhSachKhachHang());
+                    StringBuilder maYC = new StringBuilder();
+                    maYC.Append(newGuest.indentityNumber.ToString());
+                    maYC.Append(room.soPhong.ToString());
+
+                    danhSachYeuCau newDS = new danhSachYeuCau()
+                    {
+                        CCCD = newGuest.indentityNumber,
+                        maYeuCau = maYC.ToString(),
+                        soPhong = soPhong,
+                        trangThaiXuLi = "Processed"
+                    };
+
+                    db.danhSachYeuCaus.InsertOnSubmit(newDS);
+                    db.SubmitChanges();
+
+                    MessageBox.Show("Quy trình đặt phòng hoàn tất!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi: {ex.Message}", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+
+            }
         }
     }
 }

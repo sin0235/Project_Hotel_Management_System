@@ -37,14 +37,16 @@
             this.btnQuanLiNhanVien = new Guna.UI2.WinForms.Guna2Button();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.uc_BaoCao1 = new Muong_Thanh_Hotel.User_Control.uc_BaoCao();
             this.uc_QuanLyDatPhong1 = new Muong_Thanh_Hotel.User_Control.uc_QuanLyDatPhong();
             this.uc_QuanLiNhanVien1 = new Muong_Thanh_Hotel.User_Control.uc_QuanLiNhanVien();
             this.uc_AddNewRoom1 = new Muong_Thanh_Hotel.User_Control.uc_AddNewRoom();
-            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.grbChucNang.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // grbChucNang
@@ -85,7 +87,7 @@
             this.btnXemBaoCao.FillColor = System.Drawing.Color.White;
             this.btnXemBaoCao.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXemBaoCao.ForeColor = System.Drawing.Color.Black;
-            this.btnXemBaoCao.Location = new System.Drawing.Point(-41, 529);
+            this.btnXemBaoCao.Location = new System.Drawing.Point(-28, 805);
             this.btnXemBaoCao.Name = "btnXemBaoCao";
             this.btnXemBaoCao.Size = new System.Drawing.Size(313, 70);
             this.btnXemBaoCao.TabIndex = 8;
@@ -105,7 +107,7 @@
             this.btnQuanLiPhong.FillColor = System.Drawing.Color.White;
             this.btnQuanLiPhong.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuanLiPhong.ForeColor = System.Drawing.Color.Black;
-            this.btnQuanLiPhong.Location = new System.Drawing.Point(-31, 115);
+            this.btnQuanLiPhong.Location = new System.Drawing.Point(-18, 391);
             this.btnQuanLiPhong.Name = "btnQuanLiPhong";
             this.btnQuanLiPhong.Size = new System.Drawing.Size(313, 70);
             this.btnQuanLiPhong.TabIndex = 5;
@@ -125,7 +127,7 @@
             this.btnQuanLiKhachHang.FillColor = System.Drawing.Color.White;
             this.btnQuanLiKhachHang.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuanLiKhachHang.ForeColor = System.Drawing.Color.Black;
-            this.btnQuanLiKhachHang.Location = new System.Drawing.Point(-31, 391);
+            this.btnQuanLiKhachHang.Location = new System.Drawing.Point(-18, 667);
             this.btnQuanLiKhachHang.Name = "btnQuanLiKhachHang";
             this.btnQuanLiKhachHang.Size = new System.Drawing.Size(313, 70);
             this.btnQuanLiKhachHang.TabIndex = 7;
@@ -145,7 +147,7 @@
             this.btnQuanLiNhanVien.FillColor = System.Drawing.Color.White;
             this.btnQuanLiNhanVien.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuanLiNhanVien.ForeColor = System.Drawing.Color.Black;
-            this.btnQuanLiNhanVien.Location = new System.Drawing.Point(-31, 253);
+            this.btnQuanLiNhanVien.Location = new System.Drawing.Point(-18, 529);
             this.btnQuanLiNhanVien.Name = "btnQuanLiNhanVien";
             this.btnQuanLiNhanVien.Size = new System.Drawing.Size(313, 70);
             this.btnQuanLiNhanVien.TabIndex = 6;
@@ -188,6 +190,33 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1555, 1021);
             this.guna2Panel1.TabIndex = 13;
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 30;
+            this.guna2Elipse1.TargetControl = this;
+            // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.BorderRadius = 30;
+            this.guna2Elipse2.TargetControl = this;
+            // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2CirclePictureBox1.Image")));
+            this.guna2CirclePictureBox1.ImageRotate = 1F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(54, 75);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(253, 253);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.guna2CirclePictureBox1.TabIndex = 9;
+            this.guna2CirclePictureBox1.TabStop = false;
+            this.guna2CirclePictureBox1.UseTransparentBackground = true;
+            // 
             // uc_BaoCao1
             // 
             this.uc_BaoCao1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(182)))), ((int)(((byte)(251)))));
@@ -228,16 +257,6 @@
             this.uc_AddNewRoom1.TabIndex = 0;
             this.uc_AddNewRoom1.Visible = false;
             // 
-            // guna2Elipse1
-            // 
-            this.guna2Elipse1.BorderRadius = 30;
-            this.guna2Elipse1.TargetControl = this;
-            // 
-            // guna2Elipse2
-            // 
-            this.guna2Elipse2.BorderRadius = 30;
-            this.guna2Elipse2.TargetControl = this;
-            // 
             // ManagerDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -247,6 +266,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
             this.CancelButton = this.btnExit;
             this.ClientSize = new System.Drawing.Size(1942, 1102);
+            this.Controls.Add(this.guna2CirclePictureBox1);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.grbChucNang);
@@ -259,6 +279,7 @@
             this.Load += new System.EventHandler(this.ManagerDashboard_Load);
             this.grbChucNang.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -278,5 +299,6 @@
         private User_Control.uc_QuanLiNhanVien uc_QuanLiNhanVien1;
         private User_Control.uc_QuanLyDatPhong uc_QuanLyDatPhong1;
         private User_Control.uc_BaoCao uc_BaoCao1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
     }
 }

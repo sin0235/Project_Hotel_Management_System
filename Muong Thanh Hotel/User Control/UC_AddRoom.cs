@@ -27,9 +27,9 @@ namespace Muong_Thanh_Hotel.User_Control
 
         private void UC_AddRoom_Load(object sender, EventArgs e)
         {
-            query = "select * from rooms";
-            DataSet ds = fn.getData(query);
-            dataTable.DataSource = ds.Tables[0];
+            //query = "select * from rooms";
+            //DataSet ds = fn.getData(query);
+            //dataTable.DataSource = ds.Tables[0];
         }
 
         private void btnAddRoom_Click(object sender, EventArgs e)

@@ -25,7 +25,7 @@ namespace Muong_Thanh_Hotel
             cmd.CommandText = query;
             SqlDataAdapter da = new SqlDataAdapter(cmd);
             DataSet ds= new DataSet();
-            da.Fill(ds);
+            //da.Fill(ds);
             return ds;
         }
         public void setData(String query, String message)
