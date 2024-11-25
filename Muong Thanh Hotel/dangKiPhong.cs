@@ -58,6 +58,7 @@ namespace Muong_Thanh_Hotel
                                 "Thông báo",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);
+                lblThanhCong.Visible = true;
             }
             catch (Exception ex)
             {
@@ -65,6 +66,7 @@ namespace Muong_Thanh_Hotel
                                 "Cảnh báo",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Warning);
+              
             }
 
         }
@@ -105,10 +107,8 @@ namespace Muong_Thanh_Hotel
                     db.danhSachYeuCaus.InsertOnSubmit(newDS);
                     db.SubmitChanges();
 
-
-
-                
                     MessageBox.Show("Quy trình đặt phòng hoàn tất!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    Close();
                 }
             }
             catch (Exception ex)

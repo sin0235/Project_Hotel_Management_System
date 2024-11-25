@@ -59,7 +59,6 @@
             this.btnDatPhong = new Guna.UI2.WinForms.Guna2Button();
             this.pnlDienThongTin = new Guna.UI2.WinForms.Guna2Panel();
             this.lblThongTinCaNhan = new System.Windows.Forms.Label();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtQuocTich = new Guna.UI2.WinForms.Guna2TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.txtCCCD = new Guna.UI2.WinForms.Guna2TextBox();
@@ -77,6 +76,7 @@
             this.btnXacNhan = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.danhSachPhongTableAdapter = new Muong_Thanh_Hotel.ProjectDataDataSet1TableAdapters.danhSachPhongTableAdapter();
+            this.lblThanhCong = new System.Windows.Forms.Label();
             this.guna2GradientPanel1.SuspendLayout();
             this.pnlDatPhong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable)).BeginInit();
@@ -472,8 +472,8 @@
             this.pnlDienThongTin.BorderColor = System.Drawing.Color.Black;
             this.pnlDienThongTin.BorderRadius = 15;
             this.pnlDienThongTin.BorderThickness = 1;
+            this.pnlDienThongTin.Controls.Add(this.lblThanhCong);
             this.pnlDienThongTin.Controls.Add(this.lblThongTinCaNhan);
-            this.pnlDienThongTin.Controls.Add(this.guna2HtmlLabel3);
             this.pnlDienThongTin.Controls.Add(this.txtQuocTich);
             this.pnlDienThongTin.Controls.Add(this.label23);
             this.pnlDienThongTin.Controls.Add(this.txtCCCD);
@@ -506,19 +506,6 @@
             this.lblThongTinCaNhan.Size = new System.Drawing.Size(243, 39);
             this.lblThongTinCaNhan.TabIndex = 79;
             this.lblThongTinCaNhan.Text = "Thông tin cá nhân";
-            // 
-            // guna2HtmlLabel3
-            // 
-            this.guna2HtmlLabel3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.Red;
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(110, 749);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(740, 30);
-            this.guna2HtmlLabel3.TabIndex = 78;
-            this.guna2HtmlLabel3.Text = "Có vẻ đang một số trường dữ liệu chưa được nhập, quý khách vui lòng kiểm tra lại";
-            this.guna2HtmlLabel3.Visible = false;
             // 
             // txtQuocTich
             // 
@@ -786,7 +773,7 @@
             this.btnXacNhan.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.btnXacNhan.ForeColor = System.Drawing.Color.Black;
             this.btnXacNhan.IndicateFocus = true;
-            this.btnXacNhan.Location = new System.Drawing.Point(741, 858);
+            this.btnXacNhan.Location = new System.Drawing.Point(640, 649);
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Size = new System.Drawing.Size(180, 45);
             this.btnXacNhan.TabIndex = 17;
@@ -801,6 +788,18 @@
             // danhSachPhongTableAdapter
             // 
             this.danhSachPhongTableAdapter.ClearBeforeFill = true;
+            // 
+            // lblThanhCong
+            // 
+            this.lblThanhCong.AutoSize = true;
+            this.lblThanhCong.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblThanhCong.ForeColor = System.Drawing.Color.Green;
+            this.lblThanhCong.Location = new System.Drawing.Point(611, 722);
+            this.lblThanhCong.Name = "lblThanhCong";
+            this.lblThanhCong.Size = new System.Drawing.Size(240, 23);
+            this.lblThanhCong.TabIndex = 82;
+            this.lblThanhCong.Text = "Đăng kí thông tin thành công";
+            this.lblThanhCong.Visible = false;
             // 
             // dangKiPhong
             // 
@@ -835,7 +834,6 @@
         private Guna.UI2.WinForms.Guna2Panel pnlDatPhong;
         private Guna.UI2.WinForms.Guna2Button btnDatPhong;
         private Guna.UI2.WinForms.Guna2Button btnXacNhan;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2TextBox txtQuocTich;
         private System.Windows.Forms.Label label23;
         private Guna.UI2.WinForms.Guna2TextBox txtCCCD;
@@ -874,5 +872,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn loaiGiuongDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn isAvailableDataGridViewTextBoxColumn;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblThanhCong;
     }
 }
