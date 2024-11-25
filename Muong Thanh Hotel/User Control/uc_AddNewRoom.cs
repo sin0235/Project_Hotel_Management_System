@@ -107,5 +107,9 @@ namespace Muong_Thanh_Hotel.User_Control
             LoadRoomData();
         }
 
+        private void uc_TimKiemChinhSua1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.pnlDatPhong = new Guna.UI2.WinForms.Guna2Panel();
             this.cbbChonPhong = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblChonPhong = new System.Windows.Forms.Label();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.dataTable = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2ComboBox9 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cbb = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.guna2ComboBox8 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cbbLoaiPhong = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label19 = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.pnlDienThongTin = new Guna.UI2.WinForms.Guna2Panel();
@@ -99,9 +99,9 @@
             this.pnlDatPhong.Controls.Add(this.lblChonPhong);
             this.pnlDatPhong.Controls.Add(this.guna2HtmlLabel4);
             this.pnlDatPhong.Controls.Add(this.dataTable);
-            this.pnlDatPhong.Controls.Add(this.guna2ComboBox9);
+            this.pnlDatPhong.Controls.Add(this.cbb);
             this.pnlDatPhong.Controls.Add(this.label20);
-            this.pnlDatPhong.Controls.Add(this.guna2ComboBox8);
+            this.pnlDatPhong.Controls.Add(this.cbbLoaiPhong);
             this.pnlDatPhong.Controls.Add(this.label19);
             this.pnlDatPhong.Controls.Add(this.guna2Button1);
             this.pnlDatPhong.Location = new System.Drawing.Point(978, 133);
@@ -157,27 +157,27 @@
             // 
             // dataTable
             // 
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.dataTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dataTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataTable.Anchor = System.Windows.Forms.AnchorStyles.None;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataTable.ColumnHeadersHeight = 4;
             this.dataTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataTable.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataTable.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataTable.Location = new System.Drawing.Point(16, 211);
             this.dataTable.Name = "dataTable";
@@ -209,26 +209,26 @@
             this.dataTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dataTable.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataTable_CellContentClick);
             // 
-            // guna2ComboBox9
+            // cbb
             // 
-            this.guna2ComboBox9.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2ComboBox9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox9.BorderColor = System.Drawing.Color.Black;
-            this.guna2ComboBox9.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox9.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox9.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox9.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox9.ItemHeight = 60;
-            this.guna2ComboBox9.Items.AddRange(new object[] {
+            this.cbb.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbb.BackColor = System.Drawing.Color.Transparent;
+            this.cbb.BorderColor = System.Drawing.Color.Black;
+            this.cbb.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbb.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbb.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbb.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbb.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbb.ItemHeight = 60;
+            this.cbb.Items.AddRange(new object[] {
             "Single",
             "Double",
             "Family"});
-            this.guna2ComboBox9.Location = new System.Drawing.Point(613, 94);
-            this.guna2ComboBox9.Name = "guna2ComboBox9";
-            this.guna2ComboBox9.Size = new System.Drawing.Size(236, 66);
-            this.guna2ComboBox9.TabIndex = 51;
+            this.cbb.Location = new System.Drawing.Point(613, 94);
+            this.cbb.Name = "cbb";
+            this.cbb.Size = new System.Drawing.Size(236, 66);
+            this.cbb.TabIndex = 51;
             // 
             // label20
             // 
@@ -243,26 +243,26 @@
             this.label20.Text = "Loại giường:";
             this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
-            // guna2ComboBox8
+            // cbbLoaiPhong
             // 
-            this.guna2ComboBox8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.guna2ComboBox8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox8.BorderColor = System.Drawing.Color.Black;
-            this.guna2ComboBox8.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox8.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox8.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox8.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2ComboBox8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox8.ItemHeight = 60;
-            this.guna2ComboBox8.Items.AddRange(new object[] {
+            this.cbbLoaiPhong.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.cbbLoaiPhong.BackColor = System.Drawing.Color.Transparent;
+            this.cbbLoaiPhong.BorderColor = System.Drawing.Color.Black;
+            this.cbbLoaiPhong.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbbLoaiPhong.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbLoaiPhong.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbLoaiPhong.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbbLoaiPhong.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbbLoaiPhong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbbLoaiPhong.ItemHeight = 60;
+            this.cbbLoaiPhong.Items.AddRange(new object[] {
             "Economy",
             "Luxury"});
-            this.guna2ComboBox8.Location = new System.Drawing.Point(202, 94);
-            this.guna2ComboBox8.Name = "guna2ComboBox8";
-            this.guna2ComboBox8.Size = new System.Drawing.Size(236, 66);
-            this.guna2ComboBox8.TabIndex = 49;
-            this.guna2ComboBox8.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox8_SelectedIndexChanged);
+            this.cbbLoaiPhong.Location = new System.Drawing.Point(202, 94);
+            this.cbbLoaiPhong.Name = "cbbLoaiPhong";
+            this.cbbLoaiPhong.Size = new System.Drawing.Size(236, 66);
+            this.cbbLoaiPhong.TabIndex = 49;
+            this.cbbLoaiPhong.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox8_SelectedIndexChanged);
             // 
             // label19
             // 
@@ -714,9 +714,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox9;
+        private Guna.UI2.WinForms.Guna2ComboBox cbb;
         private System.Windows.Forms.Label label20;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox8;
+        private Guna.UI2.WinForms.Guna2ComboBox cbbLoaiPhong;
         private System.Windows.Forms.Label label19;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2DataGridView dataTable;
