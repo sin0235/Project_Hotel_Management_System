@@ -83,8 +83,9 @@ namespace Muong_Thanh_Hotel.User_Control
                     var room = db.danhSachPhongs.SingleOrDefault(r => r.soPhong == soPhong);
                     if (room != null)
                     {
-                        RoomSearched?.Invoke(this, room);
+                        
                         MessageBox.Show("Tìm thấy phòng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        RoomSearched?.Invoke(this, room);
                     }
                     else
                     {

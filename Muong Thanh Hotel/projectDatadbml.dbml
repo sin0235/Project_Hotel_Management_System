@@ -1,16 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ProjectData" Class="projectDatadbmlDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-CC2MRJ2T\SQLEXPRESS;Initial Catalog=ProjectData;Integrated Security=True;Encrypt=True;Trust Server Certificate=True" SettingsObjectName="Muong_Thanh_Hotel.Properties.Settings" SettingsPropertyName="ProjectDataConnectionString" Provider="System.Data.SqlClient" />
-  <Table Name="dbo.danhSachKhachHang" Member="danhSachKhachHangs">
-    <Type Name="danhSachKhachHang">
-      <Column Name="CCCD" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="hoTen" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="gioiTinh" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="sdt" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="diaChi" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="quocTich" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="ngaySinh" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.danhSachPhong" Member="danhSachPhongs">
     <Type Name="danhSachPhong">
       <Column Name="soPhong" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -20,15 +9,6 @@
       <Column Name="trangThaiPhong" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="loaiGiuong" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="isAvailable" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.danhSachYeuCau" Member="danhSachYeuCaus">
-    <Type Name="danhSachYeuCau">
-      <Column Name="maYeuCau" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="CCCD" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="soPhong" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="maDichVu" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
-      <Column Name="trangThaiXuLi" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
     </Type>
   </Table>
   <Table Name="dbo.danhSachNhanVien" Member="danhSachNhanViens">
@@ -42,6 +22,26 @@
       <Column Name="quocTich" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
       <Column Name="luong" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="hireDate" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.danhSachKhachHang" Member="danhSachKhachHangs">
+    <Type Name="danhSachKhachHang">
+      <Column Name="CCCD" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="hoTen" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="gioiTinh" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="sdt" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="diaChi" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="quocTich" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="ngaySinh" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.danhSachYeuCau" Member="danhSachYeuCaus">
+    <Type Name="danhSachYeuCau">
+      <Column Name="maYeuCau" Type="System.String" DbType="NVarChar(25) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CCCD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="soPhong" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="maDichVu" Type="System.String" DbType="NVarChar(25)" CanBeNull="true" />
+      <Column Name="trangThaiXuLi" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
     </Type>
   </Table>
 </Database>
