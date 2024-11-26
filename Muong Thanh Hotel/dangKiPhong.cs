@@ -51,7 +51,7 @@ namespace Muong_Thanh_Hotel
                 newGuest.nationality = txtQuocTich.Text.Trim();
                 newGuest.birthDate = dtNgaySinh.Value;
                 newGuest.address = txtDiaChi.Text.Trim();
-                newGuest.indentityNumber = identityNumber;
+                newGuest.identityNumber = identityNumber;
 
                 MessageBox.Show("Đăng kí thông tin thành công, quý khách vui lòng chọn phòng",
                                 "Thông báo",
@@ -90,12 +90,12 @@ namespace Muong_Thanh_Hotel
 
                     db.danhSachKhachHangs.InsertOnSubmit(newGuest.mappingDanhSachKhachHang());
                     StringBuilder maYC = new StringBuilder();
-                    maYC.Append(newGuest.indentityNumber.ToString());
+                    maYC.Append(newGuest.identityNumber.ToString());
                     maYC.Append(room.soPhong.ToString());
 
                     danhSachYeuCau newDS = new danhSachYeuCau()
                     {
-                        CCCD = newGuest.indentityNumber,
+                        CCCD = newGuest.identityNumber,
                         maYeuCau = maYC.ToString(),
                         soPhong = soPhong,
                         trangThaiXuLi = "Pending"
@@ -138,7 +138,7 @@ namespace Muong_Thanh_Hotel
                                               p.loaiPhong,
                                               p.loaiGiuong,
                                               p.gia,
-                                              p.isAvailable
+                                              p.soTang
                                           })
                                           .ToList();
 

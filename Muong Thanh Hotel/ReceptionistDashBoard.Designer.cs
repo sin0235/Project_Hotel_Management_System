@@ -33,10 +33,11 @@
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnDatPhong = new Guna.UI2.WinForms.Guna2Button();
+            this.btnHoaDon = new Guna.UI2.WinForms.Guna2Button();
             this.btnPhong = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.btnHoaDon = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.uC_CheckOut1 = new Muong_Thanh_Hotel.User_Control.UC_CheckOut(cccdNhanVien);
             this.uC_QuanLiKhachHang1 = new Muong_Thanh_Hotel.User_Control.UC_QuanLiKhachHang();
             this.uc_DangKiTrucTiep1 = new Muong_Thanh_Hotel.User_Control.uc_DangKiTrucTiep();
             this.panel2.SuspendLayout();
@@ -104,6 +105,23 @@
             this.btnDatPhong.Text = "Check-In";
             this.btnDatPhong.Click += new System.EventHandler(this.btnDatPhong_Click);
             // 
+            // btnHoaDon
+            // 
+            this.btnHoaDon.BorderRadius = 18;
+            this.btnHoaDon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHoaDon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHoaDon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHoaDon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHoaDon.FillColor = System.Drawing.Color.White;
+            this.btnHoaDon.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHoaDon.ForeColor = System.Drawing.Color.Black;
+            this.btnHoaDon.Location = new System.Drawing.Point(39, 762);
+            this.btnHoaDon.Name = "btnHoaDon";
+            this.btnHoaDon.Size = new System.Drawing.Size(251, 116);
+            this.btnHoaDon.TabIndex = 4;
+            this.btnHoaDon.Text = "Check-Out";
+            this.btnHoaDon.Click += new System.EventHandler(this.btnHoaDon_Click);
+            // 
             // btnPhong
             // 
             this.btnPhong.BorderRadius = 18;
@@ -135,36 +153,31 @@
             this.guna2Button2.ForeColor = System.Drawing.Color.White;
             this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
             this.guna2Button2.ImageSize = new System.Drawing.Size(30, 30);
-            this.guna2Button2.Location = new System.Drawing.Point(1867, -15);
+            this.guna2Button2.Location = new System.Drawing.Point(1867, 0);
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.Size = new System.Drawing.Size(63, 55);
             this.guna2Button2.TabIndex = 19;
-            // 
-            // btnHoaDon
-            // 
-            this.btnHoaDon.BorderRadius = 18;
-            this.btnHoaDon.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnHoaDon.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnHoaDon.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnHoaDon.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnHoaDon.FillColor = System.Drawing.Color.White;
-            this.btnHoaDon.Font = new System.Drawing.Font("Segoe UI Semibold", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHoaDon.ForeColor = System.Drawing.Color.Black;
-            this.btnHoaDon.Location = new System.Drawing.Point(39, 762);
-            this.btnHoaDon.Name = "btnHoaDon";
-            this.btnHoaDon.Size = new System.Drawing.Size(251, 116);
-            this.btnHoaDon.TabIndex = 4;
-            this.btnHoaDon.Text = "Check-Out";
-            this.btnHoaDon.Click += new System.EventHandler(this.btnHoaDon_Click);
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.Controls.Add(this.uC_QuanLiKhachHang1);
+            this.guna2Panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.guna2Panel1.Controls.Add(this.uc_DangKiTrucTiep1);
+            this.guna2Panel1.Controls.Add(this.uC_CheckOut1);
+            this.guna2Panel1.Controls.Add(this.uC_QuanLiKhachHang1);
             this.guna2Panel1.Location = new System.Drawing.Point(357, 46);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1562, 1017);
             this.guna2Panel1.TabIndex = 21;
+            // 
+            // uC_CheckOut1
+            // 
+            this.uC_CheckOut1.BackColor = System.Drawing.Color.Transparent;
+            this.uC_CheckOut1.Location = new System.Drawing.Point(3, 3);
+            this.uC_CheckOut1.Name = "uC_CheckOut1";
+            this.uC_CheckOut1.Size = new System.Drawing.Size(1552, 1018);
+            this.uC_CheckOut1.TabIndex = 2;
+            this.uC_CheckOut1.Visible = false;
             // 
             // uC_QuanLiKhachHang1
             // 
@@ -178,8 +191,9 @@
             // 
             // uc_DangKiTrucTiep1
             // 
+            this.uc_DangKiTrucTiep1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.uc_DangKiTrucTiep1.BackColor = System.Drawing.Color.Transparent;
-            this.uc_DangKiTrucTiep1.Location = new System.Drawing.Point(3, 3);
+            this.uc_DangKiTrucTiep1.Location = new System.Drawing.Point(22, 15);
             this.uc_DangKiTrucTiep1.Name = "uc_DangKiTrucTiep1";
             this.uc_DangKiTrucTiep1.Size = new System.Drawing.Size(1540, 1014);
             this.uc_DangKiTrucTiep1.TabIndex = 0;
@@ -197,7 +211,9 @@
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ReceptionistDashBoard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReceptionistDashBoard";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.ReceptionistDashBoard_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -219,5 +235,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private User_Control.uc_DangKiTrucTiep uc_DangKiTrucTiep1;
         private User_Control.UC_QuanLiKhachHang uC_QuanLiKhachHang1;
+        private User_Control.UC_CheckOut uC_CheckOut1;
     }
 }

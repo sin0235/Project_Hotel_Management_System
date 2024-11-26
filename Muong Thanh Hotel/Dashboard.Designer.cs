@@ -43,7 +43,7 @@
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.uC_AddRoom1 = new Muong_Thanh_Hotel.User_Control.UC_AddRoom();
-            this.uC_CheckOut1 = new Muong_Thanh_Hotel.User_Control.UC_CheckOut();
+            //this.uC_CheckOut1 = new Muong_Thanh_Hotel.User_Control.UC_CheckOut();
             this.uC_Room1 = new Muong_Thanh_Hotel.User_Control.UC_Room();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();

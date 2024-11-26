@@ -22,8 +22,8 @@ namespace Muong_Thanh_Hotel.User_Control
         
         private void btnThemNhanVien_Click(object sender, EventArgs e)
         {
-            //try
-            //{
+            try
+            {
                 if (string.IsNullOrWhiteSpace(txtCCCD.Text)) throw new Exception("Không thể bỏ trống số CCCD");
                 if (string.IsNullOrWhiteSpace(txtTen.Text)) throw new Exception("Không thể bỏ trống họ và tên");
                 if (string.IsNullOrWhiteSpace(txtDiaChi.Text)) throw new Exception("Không thể bỏ trống địa chỉ");
@@ -37,7 +37,7 @@ namespace Muong_Thanh_Hotel.User_Control
                     newRec = new Receptionist()
                     {
                         name = txtTen.Text,
-                        indentityNumber = int.Parse(txtCCCD.Text),
+                        identityNumber = int.Parse(txtCCCD.Text),
                         gender =cmbGioiTinh.SelectedItem.ToString(),
                         phoneNumber = txtSDT.Text,
                         birthDate = birthDay.Value,
@@ -47,6 +47,15 @@ namespace Muong_Thanh_Hotel.User_Control
                     };
 
                     db.danhSachNhanViens.InsertOnSubmit(newRec.mapping());
+                    var username = $"{txtTen.Text.Replace(" ", "").ToLower()}{birthDay.Value.Year}";
+                    var password = txtCCCD.ToString();
+
+                    var account = new quanLiTaiKhoan()
+                    {
+                        CCCD = int.Parse(txtCCCD.ToString()),
+                        username = username,
+                        password = password
+                    };
                     db.SubmitChanges();
                     MessageBox.Show("Thêm nhân viên thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     themNhanVien?.Invoke(this, EventArgs.Empty);
@@ -54,11 +63,11 @@ namespace Muong_Thanh_Hotel.User_Control
 
 
 
-            //}
-            //catch (Exception ex) 
-            //{
-            //    MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

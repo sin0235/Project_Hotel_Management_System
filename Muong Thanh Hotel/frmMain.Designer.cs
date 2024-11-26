@@ -35,7 +35,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -82,45 +81,35 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Modern No. 20", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Yellow;
-            this.label4.Location = new System.Drawing.Point(547, 254);
+            this.label4.Location = new System.Drawing.Point(564, 326);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(370, 30);
+            this.label4.Size = new System.Drawing.Size(441, 35);
             this.label4.TabIndex = 3;
             this.label4.Text = "Please for me know you are...";
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.button1.Location = new System.Drawing.Point(584, 325);
+            this.button1.Location = new System.Drawing.Point(997, 304);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(194, 70);
             this.button1.TabIndex = 4;
-            this.button1.Text = "Khách/Guest";
+            this.button1.Text = "Khách hàng";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.button4.Location = new System.Drawing.Point(848, 325);
+            this.button4.Location = new System.Drawing.Point(1306, 304);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(275, 70);
+            this.button4.Size = new System.Drawing.Size(194, 70);
             this.button4.TabIndex = 7;
-            this.button4.Text = "Lễ tân/Receptionist";
+            this.button4.Text = "Nhân viên";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.button5.Location = new System.Drawing.Point(1201, 325);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(238, 71);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "Quản lý/Manager";
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // pictureBox1
             // 
@@ -166,7 +155,6 @@
             this.ClientSize = new System.Drawing.Size(1496, 856);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
@@ -180,6 +168,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -194,7 +183,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }

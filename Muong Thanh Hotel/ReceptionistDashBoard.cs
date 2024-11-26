@@ -12,9 +12,11 @@ namespace Muong_Thanh_Hotel
 {
     public partial class ReceptionistDashBoard : Form
     {
-        public ReceptionistDashBoard()
+        private int cccdNhanVien;
+        public ReceptionistDashBoard(int cccdNhanVien)
         {
             InitializeComponent();
+            this.cccdNhanVien = cccdNhanVien;
         }
 
         private void btnPhong_Click(object sender, EventArgs e)
@@ -27,6 +29,7 @@ namespace Muong_Thanh_Hotel
         {
             uc_DangKiTrucTiep1.Visible = false;
             uC_QuanLiKhachHang1.Visible = false;
+            uC_CheckOut1.Visible = false;
 
         }
 
@@ -44,7 +47,13 @@ namespace Muong_Thanh_Hotel
 
         private void btnHoaDon_Click(object sender, EventArgs e)
         {
+            closeAll();
+            uC_CheckOut1.Visible=true;
+        }
 
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

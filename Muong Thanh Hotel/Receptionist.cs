@@ -2,16 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Windows.Forms;
 
 namespace Muong_Thanh_Hotel
 {
+   
     public class Receptionist : Person
-    {
+    { 
+        float luongThucNhan = 10000000;
 
         private string _username;
         private string _password;
 
-        private float _luong;
         private DateTime _hireDate;
 
         public DateTime hireDate
@@ -20,10 +22,6 @@ namespace Muong_Thanh_Hotel
             set { _hireDate = value; }
         }
 
-        public float luong
-        {
-            get { return _luong; }
-        }
 
         public string username
         {
@@ -42,11 +40,10 @@ namespace Muong_Thanh_Hotel
 
         public danhSachNhanVien mapping()
         {
-
             return new danhSachNhanVien()
             {
                 hoTen = name,
-                CCCD = indentityNumber,
+                CCCD = identityNumber,
                 ngaySInh = birthDate,
                 gioiTinh = gender,
                 diaChi = address, 
@@ -55,5 +52,40 @@ namespace Muong_Thanh_Hotel
                 quocTich = nationality
             };
         }
+
+        public void TinhLuong()
+        {
+            try
+            {
+                using (var db = new projectDatadbmlDataContext())
+                {
+                    string maGiaoDich = $"{identityNumber}{hireDate.Day:D2}{DateTime.Now.Month:D2}{DateTime.Now.Year}";
+                    var checkNV = db.luongs.FirstOrDefault(e => e.maGiaoDich == maGiaoDich);
+
+                    if (checkNV == null)
+                    {
+ 
+                        if (DateTime.Now.Day == hireDate.Day || DateTime.Now.Day - hireDate.Day > 0)
+                        {
+                            var luongNV = new luong()
+                            {
+                                CCCD = identityNumber,
+                                ngayNhan = DateTime.Now,
+                                luong1 = luongThucNhan,
+                                maGiaoDich = maGiaoDich,
+                            };
+
+                            db.luongs.InsertOnSubmit(luongNV);
+                            db.SubmitChanges();
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Lỗi: {ex.Message}", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
     }
 }

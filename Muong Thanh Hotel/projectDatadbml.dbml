@@ -45,16 +45,41 @@
       <Column Name="ngayTraPhong" Type="System.DateTime" DbType="Date" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.quanLiTaiKhoan" Member="quanLiTaiKhoans">
+    <Type Name="quanLiTaiKhoan">
+      <Column Name="CCCD" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="chucVu" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.doanhThu" Member="doanhThus">
+    <Type Name="doanhThu">
+      <Column Name="maGiaoDich" Type="System.String" DbType="NVarChar(25) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tienPhong" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="tienDichVu" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ngayNhan" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="cccd" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.danhSachNhanVien" Member="danhSachNhanViens">
     <Type Name="danhSachNhanVien">
       <Column Name="CCCD" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="hoTen" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="gioiTinh" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="ngaySInh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="sdt" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="diaChi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="quocTich" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
-      <Column Name="hireDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="hoTen" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="gioiTinh" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="ngaySInh" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="sdt" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="diaChi" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="quocTich" Type="System.String" DbType="NVarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="hireDate" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.luong" Member="luongs">
+    <Type Name="luong">
+      <Column Name="CCCD" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="luong" Member="luong1" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ngayNhan" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="maGiaoDich" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
     </Type>
   </Table>
 </Database>

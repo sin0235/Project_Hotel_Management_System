@@ -16,18 +16,19 @@ namespace Muong_Thanh_Hotel
         {
             InitializeComponent();
         }
+       
 
         private void button4_Click(object sender, EventArgs e)
         {
-           frmLoginForRecepytionist convert1 = new frmLoginForRecepytionist();
+           frmLogin convert1 = new frmLogin();
             convert1.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             frmLoginForGuest newForm = new frmLoginForGuest();
-            newForm.Show();
             
+            newForm.Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -35,11 +36,6 @@ namespace Muong_Thanh_Hotel
 
         }
 
-        private void button5_Click(object sender, EventArgs e)
-        {
-            frmLoginForManager convert1 = new frmLoginForManager();
-            convert1.Show();
-        }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
@@ -47,6 +43,46 @@ namespace Muong_Thanh_Hotel
             {
                 this.Close();
             }
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            tinhLuong();
+        }
+
+        private void tinhLuong()
+        {
+            try
+            {
+                using (var db = new projectDatadbmlDataContext())
+                {
+                    var danhSachNhanVien = db.danhSachNhanViens.ToList();
+                    foreach (var nv in danhSachNhanVien)
+                    {
+                        Receptionist nhanVien = mapping(nv);
+                        nhanVien.TinhLuong();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                
+            }
+        }
+
+        private Receptionist mapping(danhSachNhanVien nv)
+        {
+            return new Receptionist()
+            {
+                name = nv.hoTen,
+                identityNumber = nv.CCCD,
+                gender = nv.gioiTinh,
+                address = nv.diaChi,
+                nationality = nv.quocTich,
+                birthDate = nv.ngaySInh,
+                hireDate = nv.hireDate,
+                phoneNumber = nv.sdt
+            };
         }
     }
 }

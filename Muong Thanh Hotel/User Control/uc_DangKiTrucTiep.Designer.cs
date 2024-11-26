@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.pnlDatPhong = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
@@ -76,7 +76,6 @@
             // 
             // pnlDatPhong
             // 
-            this.pnlDatPhong.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlDatPhong.BorderColor = System.Drawing.Color.Black;
             this.pnlDatPhong.BorderRadius = 15;
             this.pnlDatPhong.BorderThickness = 1;
@@ -92,7 +91,7 @@
             this.pnlDatPhong.Controls.Add(this.cmbLoaiPhong);
             this.pnlDatPhong.Controls.Add(this.label19);
             this.pnlDatPhong.Controls.Add(this.btnDatPhong);
-            this.pnlDatPhong.Location = new System.Drawing.Point(767, 1);
+            this.pnlDatPhong.Location = new System.Drawing.Point(767, 8);
             this.pnlDatPhong.Name = "pnlDatPhong";
             this.pnlDatPhong.Size = new System.Drawing.Size(760, 996);
             this.pnlDatPhong.TabIndex = 16;
@@ -126,7 +125,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label6.Location = new System.Drawing.Point(-2, 378);
+            this.label6.Location = new System.Drawing.Point(3, 378);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(228, 28);
             this.label6.TabIndex = 86;
@@ -200,37 +199,37 @@
             // dataTable
             // 
             this.dataTable.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(205)))), ((int)(((byte)(233)))));
-            this.dataTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(205)))), ((int)(((byte)(233)))));
+            this.dataTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataTable.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataTable.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.dataTable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(89)))), ((int)(((byte)(182)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(89)))), ((int)(((byte)(182)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataTable.ColumnHeadersHeight = 25;
             this.dataTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(221)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(144)))), ((int)(((byte)(206)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataTable.DefaultCellStyle = dataGridViewCellStyle18;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(221)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(144)))), ((int)(((byte)(206)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataTable.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(201)))), ((int)(((byte)(231)))));
-            this.dataTable.Location = new System.Drawing.Point(3, 414);
+            this.dataTable.Location = new System.Drawing.Point(6, 409);
             this.dataTable.Name = "dataTable";
             this.dataTable.ReadOnly = true;
             this.dataTable.RowHeadersVisible = false;
             this.dataTable.RowHeadersWidth = 51;
             this.dataTable.RowTemplate.Height = 24;
-            this.dataTable.Size = new System.Drawing.Size(757, 494);
+            this.dataTable.Size = new System.Drawing.Size(743, 494);
             this.dataTable.TabIndex = 80;
             this.dataTable.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Amethyst;
             this.dataTable.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(205)))), ((int)(((byte)(233)))));
@@ -351,7 +350,6 @@
             // 
             // pnlDienThongTin
             // 
-            this.pnlDienThongTin.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pnlDienThongTin.BorderColor = System.Drawing.Color.Black;
             this.pnlDienThongTin.BorderRadius = 15;
             this.pnlDienThongTin.BorderThickness = 1;
@@ -373,7 +371,7 @@
             this.pnlDienThongTin.Controls.Add(this.label9);
             this.pnlDienThongTin.Controls.Add(this.btnXacNhan);
             this.pnlDienThongTin.CustomBorderColor = System.Drawing.Color.Black;
-            this.pnlDienThongTin.Location = new System.Drawing.Point(-8, 1);
+            this.pnlDienThongTin.Location = new System.Drawing.Point(1, 8);
             this.pnlDienThongTin.Name = "pnlDienThongTin";
             this.pnlDienThongTin.Size = new System.Drawing.Size(760, 996);
             this.pnlDienThongTin.TabIndex = 15;

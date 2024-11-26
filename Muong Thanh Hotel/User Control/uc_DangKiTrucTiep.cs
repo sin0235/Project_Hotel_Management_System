@@ -44,7 +44,7 @@ namespace Muong_Thanh_Hotel.User_Control
                 newGuest.nationality = txtQuocTich.Text.Trim();
                 newGuest.birthDate = dtNgaySinh.Value;
                 newGuest.address = txtDiaChi.Text.Trim();
-                newGuest.indentityNumber = identityNumber;
+                newGuest.identityNumber = identityNumber;
 
                 MessageBox.Show("Đăng kí thông tin thành công, quý khách vui lòng chọn phòng",
                                 "Thông báo",
@@ -84,11 +84,15 @@ namespace Muong_Thanh_Hotel.User_Control
                                               p.loaiPhong,
                                               p.loaiGiuong,
                                               p.gia,
-                                              p.isAvailable
+                                              p.soTang
                                           })
                                           .ToList();
 
                     dataTable.DataSource = danhSachPhong;
+                    dataTable.Columns["soPhong"].HeaderText = "Số phòng";
+                    dataTable.Columns["loaiPhong"].HeaderText = "Loại phòng";
+                    dataTable.Columns["loaiGiuong"].HeaderText = "Loại giường";
+                    dataTable.Columns["soTang"].HeaderText = "Số tầng";
                     dataTable.Refresh();
 
 
@@ -128,15 +132,16 @@ namespace Muong_Thanh_Hotel.User_Control
 
                     db.danhSachKhachHangs.InsertOnSubmit(newGuest.mappingDanhSachKhachHang());
                     StringBuilder maYC = new StringBuilder();
-                    maYC.Append(newGuest.indentityNumber.ToString());
+                    maYC.Append(newGuest.identityNumber.ToString());
                     maYC.Append(room.soPhong.ToString());
 
                     danhSachYeuCau newDS = new danhSachYeuCau()
                     {
-                        CCCD = newGuest.indentityNumber,
+                        CCCD = newGuest.identityNumber,
                         maYeuCau = maYC.ToString(),
                         soPhong = soPhong,
-                        trangThaiXuLi = "Processed"
+                        trangThaiXuLi = "Processed",
+
                     };
 
                     db.danhSachYeuCaus.InsertOnSubmit(newDS);

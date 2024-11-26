@@ -120,23 +120,17 @@
     <Compile Include="frmLoginForGuest.Designer.cs">
       <DependentUpon>frmLoginForGuest.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmLoginForRecepytionist.cs">
+    <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmLoginForRecepytionist.Designer.cs">
-      <DependentUpon>frmLoginForRecepytionist.cs</DependentUpon>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmLoginForManager.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmLoginForManager.Designer.cs">
-      <DependentUpon>frmLoginForManager.cs</DependentUpon>
     </Compile>
     <Compile Include="function.cs" />
     <Compile Include="Guest.cs" />
@@ -151,6 +145,12 @@
     </Compile>
     <Compile Include="GuestInterface.Designer.cs">
       <DependentUpon>GuestInterface.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loiNhuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loiNhuan.Designer.cs">
+      <DependentUpon>loiNhuan.cs</DependentUpon>
     </Compile>
     <Compile Include="Manager.cs" />
     <Compile Include="ManagerDashboard.cs">
@@ -309,20 +309,20 @@
     <EmbeddedResource Include="frmLoginForGuest.resx">
       <DependentUpon>frmLoginForGuest.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmLoginForRecepytionist.resx">
-      <DependentUpon>frmLoginForRecepytionist.cs</DependentUpon>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmLoginForManager.resx">
-      <DependentUpon>frmLoginForManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GuestDashboard.resx">
       <DependentUpon>GuestDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GuestInterface.resx">
       <DependentUpon>GuestInterface.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loiNhuan.resx">
+      <DependentUpon>loiNhuan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManagerDashboard.resx">
       <DependentUpon>ManagerDashboard.cs</DependentUpon>

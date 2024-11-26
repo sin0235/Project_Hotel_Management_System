@@ -1,6 +1,6 @@
 ﻿namespace Muong_Thanh_Hotel
 {
-    partial class frmLoginForManager
+    partial class frmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -28,51 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLoginForManager));
-            this.guna2AnimateWindow1 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
-            this.guna2AnimateWindow2 = new Guna.UI2.WinForms.Guna2AnimateWindow(this.components);
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.labelError = new System.Windows.Forms.Label();
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
-            this.lblDangNhap = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnExit = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.White;
+            this.guna2Panel1.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.labelError);
             this.guna2Panel1.Controls.Add(this.btnLogin);
             this.guna2Panel1.Controls.Add(this.txtPassword);
             this.guna2Panel1.Controls.Add(this.txtUsername);
-            this.guna2Panel1.Controls.Add(this.lblDangNhap);
+            this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Controls.Add(this.btnExit);
             this.guna2Panel1.ForeColor = System.Drawing.Color.Black;
             this.guna2Panel1.Location = new System.Drawing.Point(406, 228);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1112, 550);
-            this.guna2Panel1.TabIndex = 0;
-            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            this.guna2Panel1.TabIndex = 1;
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(663, 77);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(368, 373);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.guna2PictureBox2.TabIndex = 9;
+            this.guna2PictureBox2.TabStop = false;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label3.Location = new System.Drawing.Point(-3, 514);
+            this.label3.Location = new System.Drawing.Point(3, 506);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(1065, 36);
+            this.label3.Size = new System.Drawing.Size(406, 18);
             this.label3.TabIndex = 7;
-            this.label3.Text = resources.GetString("label3.Text");
+            this.label3.Text = "**Nếu quên tài khoản, hãy liên hệ quản trị viên để được hỗ trợ";
             // 
             // labelError
             // 
@@ -96,13 +106,12 @@
             this.btnLogin.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(204, 372);
+            this.btnLogin.Location = new System.Drawing.Point(207, 383);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(180, 45);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "Đăng nhập/Log in";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
-            this.btnLogin.Enter += new System.EventHandler(this.btnLogin_Click);
             // 
             // txtPassword
             // 
@@ -151,25 +160,27 @@
             this.txtUsername.SelectedText = "";
             this.txtUsername.Size = new System.Drawing.Size(415, 67);
             this.txtUsername.TabIndex = 3;
-            this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
-            // lblDangNhap
+            // label1
             // 
-            this.lblDangNhap.AutoSize = true;
-            this.lblDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDangNhap.Location = new System.Drawing.Point(167, 77);
-            this.lblDangNhap.Name = "lblDangNhap";
-            this.lblDangNhap.Size = new System.Drawing.Size(309, 38);
-            this.lblDangNhap.TabIndex = 2;
-            this.lblDangNhap.Text = "Đăng nhập / Log in";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(167, 77);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(309, 38);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Đăng nhập / Log in";
             // 
             // guna2PictureBox1
             // 
+            this.guna2PictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(663, 77);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(368, 373);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(0, 162);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.guna2PictureBox1.TabIndex = 1;
             this.guna2PictureBox1.TabStop = false;
@@ -185,28 +196,28 @@
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
             this.btnExit.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnExit.Location = new System.Drawing.Point(1029, 0);
+            this.btnExit.Location = new System.Drawing.Point(1026, 3);
             this.btnExit.Name = "btnExit";
             this.btnExit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnExit.Size = new System.Drawing.Size(83, 62);
             this.btnExit.TabIndex = 0;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // frmLoginForManager
+            // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1866, 808);
+            this.ClientSize = new System.Drawing.Size(1848, 761);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmLoginForManager";
+            this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
+            this.Text = "frmLoginForRecepytionist";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Enter += new System.EventHandler(this.btnLogin_Click);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -214,16 +225,15 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow1;
-        private Guna.UI2.WinForms.Guna2AnimateWindow guna2AnimateWindow2;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2CircleButton btnExit;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2TextBox txtUsername;
-        private System.Windows.Forms.Label lblDangNhap;
-        private Guna.UI2.WinForms.Guna2TextBox txtPassword;
-        private Guna.UI2.WinForms.Guna2Button btnLogin;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label labelError;
+        private Guna.UI2.WinForms.Guna2Button btnLogin;
+        private Guna.UI2.WinForms.Guna2TextBox txtPassword;
+        private Guna.UI2.WinForms.Guna2TextBox txtUsername;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2CircleButton btnExit;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
     }
 }

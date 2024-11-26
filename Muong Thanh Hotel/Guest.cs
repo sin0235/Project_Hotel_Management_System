@@ -22,7 +22,7 @@ namespace Muong_Thanh_Hotel
             kh.diaChi = address;
             kh.ngaySinh = birthDate;
             kh.gioiTinh = gender;
-            kh.CCCD = indentityNumber;
+            kh.CCCD = identityNumber;
             kh.sdt = phoneNumber;
             kh.quocTich = nationality;
             return kh;

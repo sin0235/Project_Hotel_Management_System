@@ -77,6 +77,8 @@ namespace Muong_Thanh_Hotel.User_Control
                     var nv = db.danhSachNhanViens.SingleOrDefault(em => em.CCCD == cccd);
                     if (nv != null) { 
                         db.danhSachNhanViens.DeleteOnSubmit(nv);
+                         var user = db.quanLiTaiKhoans.SingleOrDefault(u => u.CCCD == cccd);
+                        db.quanLiTaiKhoans.DeleteOnSubmit(user);
                         db.SubmitChanges();
                         MessageBox.Show("Đã xóa nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         xoaNhanVien?.Invoke(this, EventArgs.Empty);
@@ -85,7 +87,10 @@ namespace Muong_Thanh_Hotel.User_Control
                 }    
 
             }
-            catch( Exception ex) { }
+            catch( Exception ex) 
+            {
+                MessageBox.Show($"Đã xảy ra lỗi: {ex.Message}", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);   
+            }
         }
     }
 }

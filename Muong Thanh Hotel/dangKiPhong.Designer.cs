@@ -44,12 +44,6 @@
             this.cmbChonPhong = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblChonPhong = new System.Windows.Forms.Label();
             this.dataTable = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.soPhongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loaiPhongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.soTangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.giaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loaiGiuongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.isAvailableDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.danhSachPhongBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.projectDataDataSet1 = new Muong_Thanh_Hotel.ProjectDataDataSet1();
             this.cmbLoaiGiuong = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -77,6 +71,12 @@
             this.btnXacNhan = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.danhSachPhongTableAdapter = new Muong_Thanh_Hotel.ProjectDataDataSet1TableAdapters.danhSachPhongTableAdapter();
+            this.soPhongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaiPhongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soTangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.giaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaiGiuongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.isAvailableDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2GradientPanel1.SuspendLayout();
             this.pnlDatPhong.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable)).BeginInit();
@@ -319,54 +319,6 @@
             this.dataTable.ThemeStyle.RowsStyle.Height = 24;
             this.dataTable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(144)))), ((int)(((byte)(206)))));
             this.dataTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            // 
-            // soPhongDataGridViewTextBoxColumn
-            // 
-            this.soPhongDataGridViewTextBoxColumn.DataPropertyName = "soPhong";
-            this.soPhongDataGridViewTextBoxColumn.HeaderText = "Số phòng";
-            this.soPhongDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.soPhongDataGridViewTextBoxColumn.Name = "soPhongDataGridViewTextBoxColumn";
-            this.soPhongDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // loaiPhongDataGridViewTextBoxColumn
-            // 
-            this.loaiPhongDataGridViewTextBoxColumn.DataPropertyName = "loaiPhong";
-            this.loaiPhongDataGridViewTextBoxColumn.HeaderText = "Loại phòng";
-            this.loaiPhongDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.loaiPhongDataGridViewTextBoxColumn.Name = "loaiPhongDataGridViewTextBoxColumn";
-            this.loaiPhongDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // soTangDataGridViewTextBoxColumn
-            // 
-            this.soTangDataGridViewTextBoxColumn.DataPropertyName = "soTang";
-            this.soTangDataGridViewTextBoxColumn.HeaderText = "Số tầng";
-            this.soTangDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.soTangDataGridViewTextBoxColumn.Name = "soTangDataGridViewTextBoxColumn";
-            this.soTangDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // giaDataGridViewTextBoxColumn
-            // 
-            this.giaDataGridViewTextBoxColumn.DataPropertyName = "gia";
-            this.giaDataGridViewTextBoxColumn.HeaderText = "Giá phòng";
-            this.giaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.giaDataGridViewTextBoxColumn.Name = "giaDataGridViewTextBoxColumn";
-            this.giaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // loaiGiuongDataGridViewTextBoxColumn
-            // 
-            this.loaiGiuongDataGridViewTextBoxColumn.DataPropertyName = "loaiGiuong";
-            this.loaiGiuongDataGridViewTextBoxColumn.HeaderText = "Loại giường";
-            this.loaiGiuongDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.loaiGiuongDataGridViewTextBoxColumn.Name = "loaiGiuongDataGridViewTextBoxColumn";
-            this.loaiGiuongDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // isAvailableDataGridViewTextBoxColumn
-            // 
-            this.isAvailableDataGridViewTextBoxColumn.DataPropertyName = "isAvailable";
-            this.isAvailableDataGridViewTextBoxColumn.HeaderText = "Trạng thái thuê";
-            this.isAvailableDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.isAvailableDataGridViewTextBoxColumn.Name = "isAvailableDataGridViewTextBoxColumn";
-            this.isAvailableDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // danhSachPhongBindingSource
             // 
@@ -802,6 +754,54 @@
             // 
             this.danhSachPhongTableAdapter.ClearBeforeFill = true;
             // 
+            // soPhongDataGridViewTextBoxColumn
+            // 
+            this.soPhongDataGridViewTextBoxColumn.DataPropertyName = "soPhong";
+            this.soPhongDataGridViewTextBoxColumn.HeaderText = "Số phòng";
+            this.soPhongDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.soPhongDataGridViewTextBoxColumn.Name = "soPhongDataGridViewTextBoxColumn";
+            this.soPhongDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // loaiPhongDataGridViewTextBoxColumn
+            // 
+            this.loaiPhongDataGridViewTextBoxColumn.DataPropertyName = "loaiPhong";
+            this.loaiPhongDataGridViewTextBoxColumn.HeaderText = "Loại phòng";
+            this.loaiPhongDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.loaiPhongDataGridViewTextBoxColumn.Name = "loaiPhongDataGridViewTextBoxColumn";
+            this.loaiPhongDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // soTangDataGridViewTextBoxColumn
+            // 
+            this.soTangDataGridViewTextBoxColumn.DataPropertyName = "soTang";
+            this.soTangDataGridViewTextBoxColumn.HeaderText = "Số tầng";
+            this.soTangDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.soTangDataGridViewTextBoxColumn.Name = "soTangDataGridViewTextBoxColumn";
+            this.soTangDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // giaDataGridViewTextBoxColumn
+            // 
+            this.giaDataGridViewTextBoxColumn.DataPropertyName = "gia";
+            this.giaDataGridViewTextBoxColumn.HeaderText = "Giá phòng";
+            this.giaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.giaDataGridViewTextBoxColumn.Name = "giaDataGridViewTextBoxColumn";
+            this.giaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // loaiGiuongDataGridViewTextBoxColumn
+            // 
+            this.loaiGiuongDataGridViewTextBoxColumn.DataPropertyName = "loaiGiuong";
+            this.loaiGiuongDataGridViewTextBoxColumn.HeaderText = "Loại giường";
+            this.loaiGiuongDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.loaiGiuongDataGridViewTextBoxColumn.Name = "loaiGiuongDataGridViewTextBoxColumn";
+            this.loaiGiuongDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // isAvailableDataGridViewTextBoxColumn
+            // 
+            this.isAvailableDataGridViewTextBoxColumn.DataPropertyName = "soTang";
+            this.isAvailableDataGridViewTextBoxColumn.HeaderText = "Số tầng";
+            this.isAvailableDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.isAvailableDataGridViewTextBoxColumn.Name = "isAvailableDataGridViewTextBoxColumn";
+            this.isAvailableDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // dangKiPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -866,13 +866,13 @@
         private ProjectDataDataSet1 projectDataDataSet1;
         private System.Windows.Forms.BindingSource danhSachPhongBindingSource;
         private ProjectDataDataSet1TableAdapters.danhSachPhongTableAdapter danhSachPhongTableAdapter;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblThanhCong;
         private System.Windows.Forms.DataGridViewTextBoxColumn soPhongDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn loaiPhongDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn soTangDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn giaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn loaiGiuongDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn isAvailableDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label lblThanhCong;
     }
 }
