@@ -27,6 +27,7 @@ namespace Muong_Thanh_Hotel
             closeAll();
             uc_AddNewRoom1.Visible = true;
             uc_AddNewRoom1.BringToFront();
+            
 
         }
 
@@ -47,6 +48,7 @@ namespace Muong_Thanh_Hotel
             uc_QuanLiNhanVien1.Visible=false;
             uc_QuanLyDatPhong1.Visible = false;
             uc_BaoCao1.Visible=false;
+            uc_QuanLiDichVu1.Visible=false;
         }
 
 
@@ -80,5 +82,11 @@ namespace Muong_Thanh_Hotel
             uc_QuanLiNhanVien1.Visible = true;
         }
 
+        private void btnQuanLiDichVu_Click(object sender, EventArgs e)
+        {
+            closeAll();
+            uc_QuanLiDichVu1.BringToFront();
+            uc_QuanLiDichVu1 .Visible=true;
+        }
     }
 }

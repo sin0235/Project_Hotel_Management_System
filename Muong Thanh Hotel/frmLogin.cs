@@ -43,8 +43,9 @@ namespace Muong_Thanh_Hotel
                                  .Where(q => q.CCCD == user.CCCD)
                                  .FirstOrDefault();
                             var quanLi = mappingToManager(ql);
-                            this.Hide();
+
                             quanLi.func();
+                            this.Hide();
                         }
                         else
                         {

@@ -58,6 +58,7 @@ namespace Muong_Thanh_Hotel
                             .FirstOrDefault();
                         var khachHang = mapping(kh);
                         khachHang.funcExecute(soPhong);
+                        Hide();
                     }
                     else
                     {

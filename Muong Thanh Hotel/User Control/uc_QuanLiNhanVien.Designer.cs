@@ -109,6 +109,7 @@
             this.dataTableOfEmployee.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(201)))), ((int)(((byte)(231)))));
             this.dataTableOfEmployee.Location = new System.Drawing.Point(14, 64);
             this.dataTableOfEmployee.Name = "dataTableOfEmployee";
+            this.dataTableOfEmployee.ReadOnly = true;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -136,7 +137,7 @@
             this.dataTableOfEmployee.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dataTableOfEmployee.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dataTableOfEmployee.ThemeStyle.HeaderStyle.Height = 25;
-            this.dataTableOfEmployee.ThemeStyle.ReadOnly = false;
+            this.dataTableOfEmployee.ThemeStyle.ReadOnly = true;
             this.dataTableOfEmployee.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(220)))), ((int)(((byte)(239)))));
             this.dataTableOfEmployee.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataTableOfEmployee.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -151,6 +152,7 @@
             this.cCCDDataGridViewTextBoxColumn.HeaderText = "CCCD";
             this.cCCDDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.cCCDDataGridViewTextBoxColumn.Name = "cCCDDataGridViewTextBoxColumn";
+            this.cCCDDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // hoTenDataGridViewTextBoxColumn
             // 
@@ -158,6 +160,7 @@
             this.hoTenDataGridViewTextBoxColumn.HeaderText = "Họ và tên";
             this.hoTenDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.hoTenDataGridViewTextBoxColumn.Name = "hoTenDataGridViewTextBoxColumn";
+            this.hoTenDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // gioiTinhDataGridViewTextBoxColumn
             // 
@@ -165,6 +168,7 @@
             this.gioiTinhDataGridViewTextBoxColumn.HeaderText = "Giới tính";
             this.gioiTinhDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.gioiTinhDataGridViewTextBoxColumn.Name = "gioiTinhDataGridViewTextBoxColumn";
+            this.gioiTinhDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // ngaySInhDataGridViewTextBoxColumn
             // 
@@ -172,6 +176,7 @@
             this.ngaySInhDataGridViewTextBoxColumn.HeaderText = "Ngày sinh";
             this.ngaySInhDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.ngaySInhDataGridViewTextBoxColumn.Name = "ngaySInhDataGridViewTextBoxColumn";
+            this.ngaySInhDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // sdtDataGridViewTextBoxColumn
             // 
@@ -179,6 +184,7 @@
             this.sdtDataGridViewTextBoxColumn.HeaderText = "SĐT";
             this.sdtDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.sdtDataGridViewTextBoxColumn.Name = "sdtDataGridViewTextBoxColumn";
+            this.sdtDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // diaChiDataGridViewTextBoxColumn
             // 
@@ -186,6 +192,7 @@
             this.diaChiDataGridViewTextBoxColumn.HeaderText = "Địa chỉ";
             this.diaChiDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.diaChiDataGridViewTextBoxColumn.Name = "diaChiDataGridViewTextBoxColumn";
+            this.diaChiDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // quocTichDataGridViewTextBoxColumn
             // 
@@ -193,6 +200,7 @@
             this.quocTichDataGridViewTextBoxColumn.HeaderText = "Quốc tịch";
             this.quocTichDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.quocTichDataGridViewTextBoxColumn.Name = "quocTichDataGridViewTextBoxColumn";
+            this.quocTichDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // hireDateDataGridViewTextBoxColumn
             // 
@@ -200,6 +208,7 @@
             this.hireDateDataGridViewTextBoxColumn.HeaderText = "HireDate";
             this.hireDateDataGridViewTextBoxColumn.MinimumWidth = 6;
             this.hireDateDataGridViewTextBoxColumn.Name = "hireDateDataGridViewTextBoxColumn";
+            this.hireDateDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // danhSachNhanVienBindingSource2
             // 
@@ -323,8 +332,6 @@
             this.uc_SearchEdit1.Size = new System.Drawing.Size(498, 691);
             this.uc_SearchEdit1.TabIndex = 2;
             this.uc_SearchEdit1.Visible = false;
-            uc_SearchEdit1.timDanhSachNhanVien += uc_XoaNhanVien1_TimDanhSachNhanVien;
-            uc_SearchEdit1.suaNhanVien += uc_SearchEdit1_SuaNhanVien;
             // 
             // uc_XoaNhanVien1
             // 
@@ -335,8 +342,6 @@
             this.uc_XoaNhanVien1.TabIndex = 1;
             this.uc_XoaNhanVien1.Visible = false;
             this.uc_XoaNhanVien1.Load += new System.EventHandler(this.uc_XoaNhanVien1_Load);
-            uc_XoaNhanVien1.xoaNhanVien += uc_XoaNhanVien1_XoaNhanVien;
-            uc_XoaNhanVien1.timDanhSachNhanVien += uc_XoaNhanVien1_TimDanhSachNhanVien;
             // 
             // uc_ThemNhanVien1
             // 
@@ -346,7 +351,6 @@
             this.uc_ThemNhanVien1.Size = new System.Drawing.Size(491, 691);
             this.uc_ThemNhanVien1.TabIndex = 0;
             this.uc_ThemNhanVien1.Visible = false;
-            uc_ThemNhanVien1.themNhanVien += uc_ThemNhanVien1_themNhanVien;
             // 
             // guna2Elipse1
             // 

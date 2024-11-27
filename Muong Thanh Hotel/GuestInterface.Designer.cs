@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GuestInterface));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.lblChaoMung = new System.Windows.Forms.Label();
@@ -43,6 +43,10 @@
             this.btnXacNhan = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.dataTable = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.maDichVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenDichVuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chonDichVu = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dichVuBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.projectDataDataSet1 = new Muong_Thanh_Hotel.ProjectDataDataSet1();
             this.btnYeuCauDichVu = new Guna.UI2.WinForms.Guna2Button();
@@ -50,10 +54,6 @@
             this.danhSachPhongBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.danhSachPhongTableAdapter = new Muong_Thanh_Hotel.ProjectDataDataSet1TableAdapters.danhSachPhongTableAdapter();
             this.dichVuTableAdapter = new Muong_Thanh_Hotel.ProjectDataDataSet1TableAdapters.dichVuTableAdapter();
-            this.maDichVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenDichVuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.donGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.chonDichVu = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.guna2GradientPanel1.SuspendLayout();
             this.pnlDatPhong.SuspendLayout();
             this.pnlDienThongTin.SuspendLayout();
@@ -230,21 +230,21 @@
             // dataTable
             // 
             this.dataTable.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(205)))), ((int)(((byte)(233)))));
-            this.dataTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(205)))), ((int)(((byte)(233)))));
+            this.dataTable.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataTable.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dataTable.AutoGenerateColumns = false;
             this.dataTable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.dataTable.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(89)))), ((int)(((byte)(182)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(89)))), ((int)(((byte)(182)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataTable.ColumnHeadersHeight = 25;
             this.dataTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dataTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -253,17 +253,18 @@
             this.donGiaDataGridViewTextBoxColumn,
             this.chonDichVu});
             this.dataTable.DataSource = this.dichVuBindingSource;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(221)))), ((int)(((byte)(240)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(144)))), ((int)(((byte)(206)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataTable.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(221)))), ((int)(((byte)(240)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(144)))), ((int)(((byte)(206)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataTable.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataTable.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(201)))), ((int)(((byte)(231)))));
             this.dataTable.Location = new System.Drawing.Point(5, 118);
             this.dataTable.Name = "dataTable";
+            this.dataTable.ReadOnly = true;
             this.dataTable.RowHeadersVisible = false;
             this.dataTable.RowHeadersWidth = 51;
             this.dataTable.RowTemplate.Height = 24;
@@ -283,7 +284,7 @@
             this.dataTable.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dataTable.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dataTable.ThemeStyle.HeaderStyle.Height = 25;
-            this.dataTable.ThemeStyle.ReadOnly = false;
+            this.dataTable.ThemeStyle.ReadOnly = true;
             this.dataTable.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(221)))), ((int)(((byte)(240)))));
             this.dataTable.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataTable.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -291,6 +292,37 @@
             this.dataTable.ThemeStyle.RowsStyle.Height = 24;
             this.dataTable.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(188)))), ((int)(((byte)(144)))), ((int)(((byte)(206)))));
             this.dataTable.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            // 
+            // maDichVu
+            // 
+            this.maDichVu.DataPropertyName = "maDichVu";
+            this.maDichVu.HeaderText = "Mã dịch vụ";
+            this.maDichVu.MinimumWidth = 6;
+            this.maDichVu.Name = "maDichVu";
+            this.maDichVu.ReadOnly = true;
+            // 
+            // tenDichVuDataGridViewTextBoxColumn
+            // 
+            this.tenDichVuDataGridViewTextBoxColumn.DataPropertyName = "tenDichVu";
+            this.tenDichVuDataGridViewTextBoxColumn.HeaderText = "Tên dịch vụ";
+            this.tenDichVuDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tenDichVuDataGridViewTextBoxColumn.Name = "tenDichVuDataGridViewTextBoxColumn";
+            this.tenDichVuDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // donGiaDataGridViewTextBoxColumn
+            // 
+            this.donGiaDataGridViewTextBoxColumn.DataPropertyName = "donGia";
+            this.donGiaDataGridViewTextBoxColumn.HeaderText = "Đơn giá";
+            this.donGiaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.donGiaDataGridViewTextBoxColumn.Name = "donGiaDataGridViewTextBoxColumn";
+            this.donGiaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // chonDichVu
+            // 
+            this.chonDichVu.HeaderText = "Chọn";
+            this.chonDichVu.MinimumWidth = 6;
+            this.chonDichVu.Name = "chonDichVu";
+            this.chonDichVu.ReadOnly = true;
             // 
             // dichVuBindingSource
             // 
@@ -341,36 +373,6 @@
             // dichVuTableAdapter
             // 
             this.dichVuTableAdapter.ClearBeforeFill = true;
-            // 
-            // maDichVu
-            // 
-            this.maDichVu.DataPropertyName = "maDichVu";
-            this.maDichVu.HeaderText = "Mã dịch vụ";
-            this.maDichVu.MinimumWidth = 6;
-            this.maDichVu.Name = "maDichVu";
-            this.maDichVu.ReadOnly = true;
-            // 
-            // tenDichVuDataGridViewTextBoxColumn
-            // 
-            this.tenDichVuDataGridViewTextBoxColumn.DataPropertyName = "tenDichVu";
-            this.tenDichVuDataGridViewTextBoxColumn.HeaderText = "Tên dịch vụ";
-            this.tenDichVuDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.tenDichVuDataGridViewTextBoxColumn.Name = "tenDichVuDataGridViewTextBoxColumn";
-            this.tenDichVuDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // donGiaDataGridViewTextBoxColumn
-            // 
-            this.donGiaDataGridViewTextBoxColumn.DataPropertyName = "donGia";
-            this.donGiaDataGridViewTextBoxColumn.HeaderText = "Đơn giá";
-            this.donGiaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.donGiaDataGridViewTextBoxColumn.Name = "donGiaDataGridViewTextBoxColumn";
-            this.donGiaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // chonDichVu
-            // 
-            this.chonDichVu.HeaderText = "Chọn";
-            this.chonDichVu.MinimumWidth = 6;
-            this.chonDichVu.Name = "chonDichVu";
             // 
             // GuestInterface
             // 
