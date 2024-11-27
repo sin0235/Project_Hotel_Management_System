@@ -32,6 +32,7 @@ namespace Muong_Thanh_Hotel
         public void funcExecute(int soPhong)
         {
             this.soPhong = soPhong;
+            func();
         }
 
 
