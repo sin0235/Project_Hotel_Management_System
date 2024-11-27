@@ -3,37 +3,69 @@
   <Class Name="Muong_Thanh_Hotel.Person">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAABMAAAAAAYAAAABAAAgAAAAEMEgAAAAAAIAEAAAAA=</HashCode>
+      <HashCode>IAABMAAAAAAYAAAABAAAgQAAAEIEAAEAAAAIAEAAAAA=</HashCode>
       <FileName>Person.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Muong_Thanh_Hotel.Guest" Collapsed="true">
     <Position X="4.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAQAAAAQAAAAAAQAAAAAEAAAAAAAAAAQA=</HashCode>
       <FileName>Guest.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
-  <Class Name="Muong_Thanh_Hotel.Manager">
+  <Class Name="Muong_Thanh_Hotel.Manager" Collapsed="true">
     <Position X="4.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAAAAAAEQAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <HashCode>AAQAAAAAAAAAAAAAAAgAAAEAAAAAAAEAAAIAAgAAAAA=</HashCode>
       <FileName>Manager.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Muong_Thanh_Hotel.Receptionist">
+  <Class Name="Muong_Thanh_Hotel.Receptionist" Collapsed="true">
     <Position X="4.75" Y="2.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAQAAAAAAAAAAAAAAAAAAAEQAAAAAAAAAAIAAAAAAAA=</HashCode>
+      <HashCode>AAQAAAAAAAAAAAAQAQgAIAEAAAAAAAEAAAIAAgIIAAA=</HashCode>
       <FileName>Receptionist.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="Muong_Thanh_Hotel.Room">
     <Position X="9" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AEQAAAAAAFAAQAIAAgAIAAAAAIAAAAAAgCAAACAAQAA=</HashCode>
+      <HashCode>AEQAAAIAAFAAQAAAAwgAAAAAAIAAAAAQgCAAACAAQAA=</HashCode>
       <FileName>Room.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
+  <Interface Name="Muong_Thanh_Hotel.Interfaces.IFunc" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IFunc.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Muong_Thanh_Hotel.IMappingToDSPhong">
+    <Position X="12" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IMappingToDSPhong.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Muong_Thanh_Hotel.Interfaces.IMappingToDSKhachHang" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IMappingToDSKhachHang.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Muong_Thanh_Hotel.Interfaces.IMappingToDSNhanVien" Collapsed="true">
+    <Position X="3.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Interfaces\IMappingToDSNhanVien.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

@@ -5,8 +5,9 @@ using System.Text;
 
 namespace Muong_Thanh_Hotel
 {
-    public class Guest : Person
+    public class Guest : Person, Interfaces.IMappingToDSKhachHang
     {
+        private GuestInterface frm;
         public Guest()
         {
         }
@@ -15,7 +16,7 @@ namespace Muong_Thanh_Hotel
         {
         }
 
-        public danhSachKhachHang mappingDanhSachKhachHang()
+        public danhSachKhachHang mapping()
         {
             danhSachKhachHang kh = new danhSachKhachHang();
             kh.hoTen = name;
@@ -27,7 +28,18 @@ namespace Muong_Thanh_Hotel
             kh.quocTich = nationality;
             return kh;
         }
+        private int soPhong;
+        public void funcExecute(int soPhong)
+        {
+            this.soPhong = soPhong;
+        }
 
+
+        public override void func()
+        {
+            frm = new GuestInterface(identityNumber, soPhong);
+            frm.Show();
+        }
     }
 
 }

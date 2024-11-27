@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Muong_Thanh_Hotel
 {
-    public class Room
+    public class Room : IMappingToDSPhong
     {
         private int _soPhong;
         private string _loaiPhong;
@@ -22,9 +22,9 @@ namespace Muong_Thanh_Hotel
         public float gia { get { return _gia; } set { _gia = value; } }
         public string isAvailable { get { return _isAvailable; } set { _isAvailable = value; } }
         public string loaiGiuong { get { return _loaiGiuong; } set { _loaiGiuong = value; } }
-        public string trangThaiPhong { get {return _trangThaiPhong; } set {_trangThaiPhong = value; }}
+        public string trangThaiPhong { get { return _trangThaiPhong; } set { _trangThaiPhong = value; } }
 
-        public danhSachPhong mapDanhSachPhong()
+        public danhSachPhong mapping()
         {
             danhSachPhong dsPhong = new danhSachPhong();
             dsPhong.soPhong = soPhong;

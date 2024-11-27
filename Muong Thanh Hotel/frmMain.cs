@@ -56,9 +56,14 @@ namespace Muong_Thanh_Hotel
             {
                 using (var db = new projectDatadbmlDataContext())
                 {
-                    var danhSachNhanVien = db.danhSachNhanViens.ToList();
+                   var danhSachNhanVien = (from nv in db.danhSachNhanViens
+                                           join acc in db.quanLiTaiKhoans on nv.CCCD equals acc.CCCD
+                                           where acc.chucVu == "Receptionist"
+                                           select nv)
+                                           .ToList();
                     foreach (var nv in danhSachNhanVien)
                     {
+                        
                         Receptionist nhanVien = mapping(nv);
                         nhanVien.TinhLuong();
                     }

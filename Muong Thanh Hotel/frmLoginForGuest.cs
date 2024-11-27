@@ -53,8 +53,11 @@ namespace Muong_Thanh_Hotel
                     {
                         MessageBox.Show("Đăng nhập thành công! Chào mừng quý khách.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        GuestInterface frm = new GuestInterface(cccd, soPhong);
-                        frm.Show();
+                        var kh = db.danhSachKhachHangs
+                            .Where(g=> g.CCCD == cccd)
+                            .FirstOrDefault();
+                        var khachHang = mapping(kh);
+                        khachHang.funcExecute(soPhong);
                     }
                     else
                     {
@@ -77,6 +80,21 @@ namespace Muong_Thanh_Hotel
         {
             dangKiPhong newForm = new dangKiPhong();
             newForm.Show();
+        }
+
+        private Guest mapping(danhSachKhachHang kh)
+        {
+            return new Guest()
+            { 
+                name = kh.hoTen,
+                gender = kh.gioiTinh,
+                birthDate = kh.ngaySinh,
+                identityNumber = kh.CCCD,
+                phoneNumber  = kh.sdt,
+                nationality = kh.quocTich,
+                address = kh.diaChi
+            };
+
         }
     }
 }

@@ -39,14 +39,22 @@ namespace Muong_Thanh_Hotel
                         
                         if (user.chucVu == "Manager")
                         {
-                            ManagerDashboard newForm = new ManagerDashboard();
-                            newForm.Show();
+                            var ql = db.danhSachNhanViens
+                                 .Where(q => q.CCCD == user.CCCD)
+                                 .FirstOrDefault();
+                            var quanLi = mappingToManager(ql);
+                            this.Hide();
+                            quanLi.func();
                         }
                         else
                         {
-                            ReceptionistDashBoard receptionistFrn = new ReceptionistDashBoard(user.CCCD);
+                            var nv = db.danhSachNhanViens
+                                  .Where(q => q.CCCD == user.CCCD)
+                                  .FirstOrDefault();
+                            var leTan = mappingToReceptionist(nv);
+                            leTan.func();
                             this.Hide();
-                            receptionistFrn.Show();
+                            
                         }
                     }
                     else
@@ -61,9 +69,51 @@ namespace Muong_Thanh_Hotel
                 MessageBox.Show($"Lỗi: {ex.Message}", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-        private void btnRegister_Click(object sender, EventArgs e)
+        private Receptionist mappingToReceptionist(danhSachNhanVien nv)
         {
+            quanLiTaiKhoan acc;
+            using (var db = new projectDatadbmlDataContext())
+            {
+                acc = db.quanLiTaiKhoans
+                    .Where(tk => tk.CCCD == nv.CCCD)
+                    .FirstOrDefault();
+            }    
+            return new Receptionist()
+            {
+                name = nv.hoTen,
+                identityNumber = nv.CCCD,
+                birthDate = nv.ngaySInh,
+                hireDate = nv.hireDate,
+                gender = nv.gioiTinh,
+                address = nv.diaChi,
+                phoneNumber = nv.sdt,
+                nationality = nv.quocTich,
+                username = acc.username,
+                password = acc.password
+            };
+        }
+
+        private Manager mappingToManager(danhSachNhanVien quanLi)
+        {
+            quanLiTaiKhoan acc;
+            using (var db = new projectDatadbmlDataContext())
+            {
+                acc = db.quanLiTaiKhoans
+                    .Where(tk => tk.CCCD == quanLi.CCCD)
+                    .FirstOrDefault();
+            }
+            return new Manager()
+            {
+                name = quanLi.hoTen,
+                identityNumber = quanLi.CCCD,
+                birthDate = quanLi.ngaySInh,  
+                gender = quanLi.gioiTinh,
+                address = quanLi.diaChi,
+                phoneNumber = quanLi.sdt,
+                nationality = quanLi.quocTich,
+                username = acc.username,
+                password = acc.password
+            };
 
         }
     }

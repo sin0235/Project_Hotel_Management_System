@@ -6,13 +6,15 @@ using System.Windows.Forms;
 
 namespace Muong_Thanh_Hotel
 {
-   
-    public class Receptionist : Person
-    { 
+
+    public class Receptionist : Person, Interfaces.IMappingToDSNhanVien
+    {
         float luongThucNhan = 10000000;
 
         private string _username;
         private string _password;
+
+        private ReceptionistDashBoard newForm;
 
         private DateTime _hireDate;
 
@@ -29,7 +31,7 @@ namespace Muong_Thanh_Hotel
             set { _username = value; }
         }
 
-        public string passwork { set { _password = value; } }
+        public string password { set { _password = value; } }
 
         public Receptionist() { }
 
@@ -46,11 +48,17 @@ namespace Muong_Thanh_Hotel
                 CCCD = identityNumber,
                 ngaySInh = birthDate,
                 gioiTinh = gender,
-                diaChi = address, 
+                diaChi = address,
                 hireDate = hireDate,
                 sdt = phoneNumber,
                 quocTich = nationality
             };
+        }
+
+        public override void func()
+        {
+            newForm = new ReceptionistDashBoard(identityNumber);
+            newForm.Show();
         }
 
         public void TinhLuong()
@@ -64,7 +72,7 @@ namespace Muong_Thanh_Hotel
 
                     if (checkNV == null)
                     {
- 
+
                         if (DateTime.Now.Day == hireDate.Day || DateTime.Now.Day - hireDate.Day > 0)
                         {
                             var luongNV = new luong()

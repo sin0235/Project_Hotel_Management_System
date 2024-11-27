@@ -37,7 +37,6 @@
             this.btnPhong = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.uC_CheckOut1 = new Muong_Thanh_Hotel.User_Control.UC_CheckOut(cccdNhanVien);
             this.uC_QuanLiKhachHang1 = new Muong_Thanh_Hotel.User_Control.UC_QuanLiKhachHang();
             this.uc_DangKiTrucTiep1 = new Muong_Thanh_Hotel.User_Control.uc_DangKiTrucTiep();
             this.panel2.SuspendLayout();
@@ -163,22 +162,12 @@
             // 
             this.guna2Panel1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.guna2Panel1.Controls.Add(this.uc_DangKiTrucTiep1);
-            this.guna2Panel1.Controls.Add(this.uC_CheckOut1);
             this.guna2Panel1.Controls.Add(this.uC_QuanLiKhachHang1);
             this.guna2Panel1.Location = new System.Drawing.Point(357, 46);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1562, 1017);
             this.guna2Panel1.TabIndex = 21;
-            // 
-            // uC_CheckOut1
-            // 
-            this.uC_CheckOut1.BackColor = System.Drawing.Color.Transparent;
-            this.uC_CheckOut1.Location = new System.Drawing.Point(3, 3);
-            this.uC_CheckOut1.Name = "uC_CheckOut1";
-            this.uC_CheckOut1.Size = new System.Drawing.Size(1552, 1018);
-            this.uC_CheckOut1.TabIndex = 2;
-            this.uC_CheckOut1.Visible = false;
-            // 
+
             // uC_QuanLiKhachHang1
             // 
             this.uC_QuanLiKhachHang1.BackColor = System.Drawing.Color.Transparent;

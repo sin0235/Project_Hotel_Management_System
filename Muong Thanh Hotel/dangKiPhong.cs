@@ -88,7 +88,7 @@ namespace Muong_Thanh_Hotel
                     var room = db.danhSachPhongs.SingleOrDefault(r => r.soPhong == soPhong);
                     room.isAvailable = "Not Available";
 
-                    db.danhSachKhachHangs.InsertOnSubmit(newGuest.mappingDanhSachKhachHang());
+                    db.danhSachKhachHangs.InsertOnSubmit(newGuest.mapping());
                     StringBuilder maYC = new StringBuilder();
                     maYC.Append(newGuest.identityNumber.ToString());
                     maYC.Append(room.soPhong.ToString());

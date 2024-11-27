@@ -69,7 +69,7 @@ namespace Muong_Thanh_Hotel.User_Control
                     newRoom.isAvailable = txtIsAvailable.SelectedItem.ToString();
                     newRoom.gia = gia;
 
-                    ds.danhSachPhongs.InsertOnSubmit(newRoom.mapDanhSachPhong());
+                    ds.danhSachPhongs.InsertOnSubmit(newRoom.mapping());
                     ds.SubmitChanges();
 
                     MessageBox.Show("Thêm phòng mới thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);

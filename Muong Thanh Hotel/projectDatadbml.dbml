@@ -32,19 +32,6 @@
       <Column Name="trangThaiXuLi" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="dbo.danhSachKhachHang" Member="danhSachKhachHangs">
-    <Type Name="danhSachKhachHang">
-      <Column Name="CCCD" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="hoTen" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="gioiTinh" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="sdt" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="diaChi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="quocTich" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
-      <Column Name="ngaySinh" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="ngayThue" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-      <Column Name="ngayTraPhong" Type="System.DateTime" DbType="Date" CanBeNull="true" />
-    </Type>
-  </Table>
   <Table Name="dbo.quanLiTaiKhoan" Member="quanLiTaiKhoans">
     <Type Name="quanLiTaiKhoan">
       <Column Name="CCCD" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -80,6 +67,19 @@
       <Column Name="luong" Member="luong1" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
       <Column Name="ngayNhan" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
       <Column Name="maGiaoDich" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.danhSachKhachHang" Member="danhSachKhachHangs">
+    <Type Name="danhSachKhachHang">
+      <Column Name="CCCD" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="hoTen" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="gioiTinh" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="sdt" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="diaChi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="quocTich" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ngaySinh" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="ngayThue" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ngayTraPhong" Type="System.DateTime" DbType="Date" CanBeNull="true" />
     </Type>
   </Table>
 </Database>

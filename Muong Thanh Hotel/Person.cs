@@ -5,21 +5,21 @@ using System.Text;
 
 namespace Muong_Thanh_Hotel
 {
-    public class Person
+    public abstract class Person : Interfaces.IFunc
     {
         private string _name;
-        private  DateTime _birthDate;
+        private DateTime _birthDate;
         private string _gender;
         private int _identityNumber;
         private string _phoneNumber;
         private string _address;
         private string _nationality;
 
-        public string name{get { return _name; } set { _name = value; }}
-        public DateTime birthDate{ get { return _birthDate; } set { _birthDate = value; } }
-        public string gender{ get { return _gender; } set {_gender = value; } }
-        public int identityNumber {get { return _identityNumber; } set { _identityNumber = value; }}
-        public string phoneNumber {  get { return _phoneNumber; } set { _phoneNumber = value; } }
+        public string name { get { return _name; } set { _name = value; } }
+        public DateTime birthDate { get { return _birthDate; } set { _birthDate = value; } }
+        public string gender { get { return _gender; } set { _gender = value; } }
+        public int identityNumber { get { return _identityNumber; } set { _identityNumber = value; } }
+        public string phoneNumber { get { return _phoneNumber; } set { _phoneNumber = value; } }
         public string address { get { return _address; } set { _address = value; } }
         public string nationality { get { return _nationality; } set { _nationality = value; } }
 
@@ -37,5 +37,7 @@ namespace Muong_Thanh_Hotel
         public Person()
         {
         }
+
+        public abstract void func();
     }
 }
