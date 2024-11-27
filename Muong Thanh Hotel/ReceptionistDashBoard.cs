@@ -29,7 +29,8 @@ namespace Muong_Thanh_Hotel
         {
             uc_DangKiTrucTiep1.Visible = false;
             uC_QuanLiKhachHang1.Visible = false;
-            uC_CheckOut1.Visible = false;
+            uC_CheckOut2.Visible = false;
+           
 
         }
 
@@ -48,12 +49,17 @@ namespace Muong_Thanh_Hotel
         private void btnHoaDon_Click(object sender, EventArgs e)
         {
             closeAll();
-            uC_CheckOut1.Visible=true;
+            uC_CheckOut2.Visible = true;
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void uC_CheckOut2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
